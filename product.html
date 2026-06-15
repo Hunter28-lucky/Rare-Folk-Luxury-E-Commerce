@@ -41,14 +41,20 @@
 </div>
 <div class="flex items-center gap-6 text-primary">
 <button class="hover:opacity-70 transition-opacity duration-300 flex items-center justify-center">
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">shopping_bag</span>
+<span class="material-symbols-outlined">search</span>
 </button>
-<button class="hover:opacity-70 transition-opacity duration-300 flex items-center justify-center hidden md:flex">
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">person</span>
+<button class="hover:opacity-70 transition-opacity duration-300 flex items-center justify-center hidden md:block">
+<span class="material-symbols-outlined">person</span>
+</button>
+<button class="hover:opacity-70 transition-opacity duration-300 flex items-center justify-center">
+<span class="material-symbols-outlined">shopping_bag</span>
+</button>
+<button id="mobile-menu-btn" class="hover:opacity-70 transition-opacity duration-300 md:hidden flex items-center justify-center">
+<span class="material-symbols-outlined">menu</span>
 </button>
 </div>
 </nav>
-<main class="pt-[100px] md:pt-[120px] pb-section-gap">
+<main class="pt-[100px] md:pt-[120px] pb-20 md:pb-section-gap">
 <section class="px-margin-mobile md:px-margin-desktop max-w-[1800px] mx-auto flex flex-col md:flex-row gap-gutter relative">
 <div class="w-full md:w-7/12 lg:w-2/3 flex flex-col gap-4 md:gap-gutter">
 <div class="w-full aspect-[3/4] md:aspect-auto md:min-h-[819px] bg-surface-container-highest flex items-center justify-center overflow-hidden cursor-zoom-in group">
@@ -125,7 +131,7 @@
 </div>
 </section>
 <!-- Narrative Block -->
-<section class="mt-section-gap w-full flex flex-col md:flex-row bg-surface-container-highest">
+<section class="mt-20 md:mt-section-gap w-full flex flex-col md:flex-row bg-surface-container-highest">
 <div class="w-full md:w-1/2 aspect-square md:aspect-auto md:min-h-[716px]">
 <img alt="Artisan working on the print design" class="w-full h-full object-cover grayscale" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZN-y1lecw0PadftWD7Gg7RMDM-UFzAMBct2R_4EW1tPCz_qMiN9Rx3mGHEcaRefTs5zHuhStk4B3a7g7Fsdd3HHgr2i8ZimTcjcmDbMWVNt17L2VSAfGst6brK4etEhEtLVOhkuUrmVPra1niKnmm9VJYtlawZJAB6UbK7lKH4SfUOZH19IPMLSPIEDK25UDkyWzoh8Fybhh1eSYPikFP_R5_r6vKQ-g2aNu3brFsQL24J4oLIR0UhjqCPD6UqqwWhb5ZfH4-AZQ"/>
 </div>
@@ -143,12 +149,12 @@
 </div>
 </section>
 <!-- Curated Pairings -->
-<section class="mt-section-gap px-margin-mobile md:px-margin-desktop max-w-[1800px] mx-auto">
+<section class="mt-20 md:mt-section-gap px-margin-mobile md:px-margin-desktop max-w-[1800px] mx-auto">
 <div class="flex flex-col md:flex-row justify-between items-end mb-12">
 <h2 class="font-headline-lg text-headline-lg text-onyx-black">Curated Pairings</h2>
 <a class="font-cta text-cta uppercase tracking-widest text-onyx-black border-b border-onyx-black pb-1 mt-4 md:mt-0 inline-block hover:text-muted-gray hover:border-muted-gray transition-colors" href="shop.html">Explore Collection</a>
 </div>
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<div class="grid grid-cols-2 lg:grid-cols-4 gap-x-4 md:gap-x-gutter gap-y-12 md:gap-y-24">
 <a class="group block cursor-pointer" href="#">
 <div class="w-full aspect-[3/4] bg-surface-container-highest mb-4 overflow-hidden">
 <img alt="Pleated Wide Leg Trousers" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUMTmzkZC2m8m_R7t1ok1pwLPKtFl4GC6lYqrT7lf16tamRdcvqeghtJ_qhqZWMzh3UfYH40wGjlAgVxDHQj7CM12x4OEBD6a0GNOckwGNhAg_KQm7uVF8_rLIDlKEbmZUCA71vaPiLIJQ1sHAjJ1sR1hGwbsoT57p_Yer0qY-ouqKqagkeqzzNhybtEbxxQrn10OhQrYXjgy6p36iFwWuknZ-wyfc1Cms-tKb1Mhs6z73SDH6fpT7ntlf47-vm3iuaWwVGqpmqiA"/>
@@ -196,7 +202,61 @@
 </div>
 </div>
 </footer>
+<!-- Mobile Menu Drawer Overlay -->
+<div id="mobile-menu" class="fixed inset-0 z-50 bg-onyx-black/40 backdrop-blur-md opacity-0 pointer-events-none transition-opacity duration-500 ease-in-out">
+<div class="absolute right-0 top-0 h-full w-full max-w-[400px] bg-off-white shadow-2xl p-margin-mobile flex flex-col justify-between transform translate-x-full transition-transform duration-500 ease-in-out" id="mobile-menu-content">
+<div>
+<div class="flex justify-between items-center pb-6 border-b border-muted-gray/20">
+<span class="font-display-lg text-headline-lg uppercase tracking-tighter text-onyx-black">Rare Folk</span>
+<button id="close-menu-btn" class="text-onyx-black hover:opacity-70 transition-opacity duration-300 flex items-center justify-center">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<div class="flex flex-col space-y-8 mt-12">
+<a class="font-cta text-[24px] uppercase tracking-widest text-muted-gray hover:text-onyx-black transition-colors" href="index.html">Collections</a>
+<a class="font-cta text-[24px] uppercase tracking-widest text-muted-gray hover:text-onyx-black transition-colors" href="journal.html">Narratives</a>
+<a class="font-cta text-[24px] uppercase tracking-widest text-muted-gray hover:text-onyx-black transition-colors" href="about.html">Archives</a>
+<a class="font-cta text-[24px] uppercase tracking-widest text-onyx-black transition-colors" href="shop.html">Boutique</a>
+</div>
+</div>
+<div class="flex flex-col gap-6 border-t border-muted-gray/20 pt-8">
+<a class="font-body-md text-body-md text-muted-gray hover:text-onyx-black flex items-center gap-2" href="contact.html">
+<span class="material-symbols-outlined text-[20px]">mail</span> Contact Us
+</a>
+<div class="flex gap-4">
+<a class="text-onyx-black hover:opacity-70 text-sm font-cta uppercase tracking-wider" href="#">Instagram</a>
+<a class="text-onyx-black hover:opacity-70 text-sm font-cta uppercase tracking-wider" href="#">Pinterest</a>
+</div>
+</div>
+</div>
+</div>
+
 <script>
+    // Mobile Drawer toggle functionality
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const closeMenuBtn = document.getElementById('close-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileMenuContent = document.getElementById('mobile-menu-content');
+
+    if (mobileMenuBtn && closeMenuBtn && mobileMenu && mobileMenuContent) {
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.remove('opacity-0', 'pointer-events-none');
+            mobileMenuContent.classList.remove('translate-x-full');
+        });
+        
+        closeMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.add('opacity-0', 'pointer-events-none');
+            mobileMenuContent.classList.add('translate-x-full');
+        });
+        
+        mobileMenu.addEventListener('click', (e) => {
+            if (e.target === mobileMenu) {
+                mobileMenu.classList.add('opacity-0', 'pointer-events-none');
+                mobileMenuContent.classList.add('translate-x-full');
+            }
+        });
+    }
+
     window.addEventListener('scroll', () => {
         const nav = document.getElementById('global-nav');
         if (window.scrollY > 50) {

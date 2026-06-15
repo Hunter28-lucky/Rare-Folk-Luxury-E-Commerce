@@ -26,6 +26,8 @@
         -webkit-font-feature-settings: 'liga';
         -webkit-font-smoothing: antialiased;
     }
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
 </style>
 <script id="tailwind-config">
     tailwind.config = {
@@ -54,9 +56,9 @@
 </script>
 </head>
 <body class="bg-off-white text-onyx-black antialiased selection:bg-onyx-black selection:text-off-white">
-<nav class="bg-transparent dark:bg-transparent fixed top-0 w-full z-50 border-b border-muted-gray/20 transition-all duration-500 ease-in-out">
-<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-6 w-full z-50">
-<a class="font-display-lg text-headline-lg uppercase tracking-tighter text-onyx-black dark:text-off-white" href="index.html">
+<nav class="bg-transparent fixed top-0 w-full z-50 border-b border-muted-gray/20 transition-all duration-500 ease-in-out" id="global-nav">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-6 w-full">
+<a class="font-display-lg text-headline-lg uppercase tracking-tighter text-onyx-black" href="index.html">
     Rare Folk
 </a>
 <div class="hidden md:flex items-center gap-8">
@@ -66,11 +68,17 @@
 <a class="font-cta text-cta uppercase tracking-widest text-onyx-black border-b-2 border-onyx-black pb-1" href="shop.html">Boutique</a>
 </div>
 <div class="flex items-center gap-6">
+<button aria-label="search" class="text-primary hover:opacity-70 transition-opacity duration-300">
+<span class="material-symbols-outlined">search</span>
+</button>
+<button aria-label="person" class="text-primary hover:opacity-70 transition-opacity duration-300 hidden md:block">
+<span class="material-symbols-outlined">person</span>
+</button>
 <button aria-label="shopping_bag" class="text-primary hover:opacity-70 transition-opacity duration-300">
 <span class="material-symbols-outlined">shopping_bag</span>
 </button>
-<button aria-label="person" class="text-primary hover:opacity-70 transition-opacity duration-300">
-<span class="material-symbols-outlined">person</span>
+<button id="mobile-menu-btn" class="text-primary hover:opacity-70 transition-opacity duration-300 md:hidden flex items-center justify-center">
+<span class="material-symbols-outlined">menu</span>
 </button>
 </div>
 </div>
@@ -81,12 +89,12 @@
 <p class="font-body-lg text-body-lg text-muted-gray max-w-2xl mx-auto">Curated artifacts and limited editions. A synthesis of heritage craftsmanship and modern anonymity.</p>
 </header>
 <section class="px-margin-mobile md:px-margin-desktop mb-16 flex flex-col md:flex-row justify-between items-start md:items-center gap-8 border-b border-muted-gray/20 pb-6 sticky top-24 z-40 bg-off-white/90 backdrop-blur-md">
-<div class="flex flex-wrap items-center gap-6">
-<button class="font-label-caps text-label-caps uppercase text-onyx-black border-b border-onyx-black pb-1">All Objects</button>
-<button class="font-label-caps text-label-caps uppercase text-muted-gray hover:text-onyx-black transition-colors">Oversized Tees</button>
-<button class="font-label-caps text-label-caps uppercase text-muted-gray hover:text-onyx-black transition-colors">Graphic Tees</button>
-<button class="font-label-caps text-label-caps uppercase text-muted-gray hover:text-onyx-black transition-colors">New Arrivals</button>
-<button class="font-label-caps text-label-caps uppercase text-muted-gray hover:text-onyx-black transition-colors">Limited Editions</button>
+<div class="flex items-center gap-6 overflow-x-auto no-scrollbar w-full md:w-auto -mx-margin-mobile px-margin-mobile pb-3 md:pb-0 md:mx-0 md:px-0">
+<button class="font-label-caps text-label-caps uppercase text-onyx-black border-b border-onyx-black pb-1 shrink-0">All Objects</button>
+<button class="font-label-caps text-label-caps uppercase text-muted-gray hover:text-onyx-black transition-colors shrink-0">Oversized Tees</button>
+<button class="font-label-caps text-label-caps uppercase text-muted-gray hover:text-onyx-black transition-colors shrink-0">Graphic Tees</button>
+<button class="font-label-caps text-label-caps uppercase text-muted-gray hover:text-onyx-black transition-colors shrink-0">New Arrivals</button>
+<button class="font-label-caps text-label-caps uppercase text-muted-gray hover:text-onyx-black transition-colors shrink-0">Limited Editions</button>
 </div>
 <div class="flex items-center gap-8 w-full md:w-auto justify-between md:justify-end">
 <div class="relative group">
@@ -100,8 +108,8 @@
 </button>
 </div>
 </section>
-<section class="px-margin-mobile md:px-margin-desktop grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-gutter gap-y-24">
-<article class="group relative flex flex-col gap-6 cursor-pointer">
+<section class="px-margin-mobile md:px-margin-desktop grid grid-cols-2 md:grid-cols-3 gap-x-4 md:gap-x-gutter gap-y-12 md:gap-y-24">
+<article class="group relative flex flex-col gap-4 md:gap-6 cursor-pointer">
 <a href="product.html" class="block">
 <div class="relative w-full aspect-[3/4] overflow-hidden bg-surface-container-highest">
 <img class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhnPhVOs5wUtUEt2yX0PCP6eGe6lvdF-kHDBySBgHwhOotFA1Sa3LxvzulvLOWXMsCA-K6bYpumOrOf7KQVlrt9Nyv4UdaVMGS4DhOYkKygkPsEdokQZO6e7npH2gMXr5zXeiaV3j1_8iYjwm70jucQLBvlF78zhvXWUgYAAGMpzVJGnf6D9Vw3qQVN_i_SzM5vvUPc3K-LvOFaIpDzmT2oJzEZcU1OmFSDlXRvtnuw6JLVGzWNB_6wGdIUpwk_V6sE_EaeIHklRY" alt="The Artifact Tee"/>
@@ -114,12 +122,12 @@
 </div>
 </a>
 <div class="flex flex-col gap-1">
-<h3 class="font-body-lg text-body-lg font-bold text-onyx-black tracking-wide uppercase">The Artifact Tee</h3>
-<span class="font-body-md text-body-md text-muted-gray">Cream / Onyx</span>
-<span class="font-body-lg text-body-lg text-onyx-black mt-2">$145</span>
+<h3 class="font-body-lg text-[15px] md:text-body-lg font-bold text-onyx-black tracking-wide uppercase">The Artifact Tee</h3>
+<span class="font-body-md text-xs md:text-body-md text-muted-gray">Cream / Onyx</span>
+<span class="font-body-lg text-[15px] md:text-body-lg text-onyx-black mt-1 md:mt-2">$145</span>
 </div>
 </article>
-<article class="group relative flex flex-col gap-6 cursor-pointer">
+<article class="group relative flex flex-col gap-4 md:gap-6 cursor-pointer">
 <div class="relative w-full aspect-[3/4] overflow-hidden bg-surface-container-highest">
 <img class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIBYNqR8ZguvNuQ0t9D8QHDbAercMniVDaAqPzlQcQ93vQ1YX0mTf5X6XSY-uDCfsUyp__XMbUhNBuHf1Gj-uBimkxbwRCVHpB4mCPLvqhrqLgiedsvaswqrcWmYT8-YCEeW8lBw8U5uX2IxQTSeC7sf2fOD_YPBpYurovEH0wGK31SfV911lRfem3AqttQT4sSmVNTa_F6Zay1JgOPU7LfDDL79HgfvBMAbUZjr2r8hh-ZviSwwxrbn6mTsRGbLAI89aEThtbhhY" alt="Monolith Hoodie"/>
 <button class="absolute top-4 right-4 z-10 text-muted-gray hover:text-onyx-black transition-colors">
@@ -130,12 +138,12 @@
 </div>
 </div>
 <div class="flex flex-col gap-1">
-<h3 class="font-body-lg text-body-lg font-bold text-onyx-black tracking-wide uppercase">Monolith Hoodie</h3>
-<span class="font-body-md text-body-md text-muted-gray">Void Black</span>
-<span class="font-body-lg text-body-lg text-onyx-black mt-2">$220</span>
+<h3 class="font-body-lg text-[15px] md:text-body-lg font-bold text-onyx-black tracking-wide uppercase">Monolith Hoodie</h3>
+<span class="font-body-md text-xs md:text-body-md text-muted-gray">Void Black</span>
+<span class="font-body-lg text-[15px] md:text-body-lg text-onyx-black mt-1 md:mt-2">$220</span>
 </div>
 </article>
-<article class="group relative flex flex-col gap-6 cursor-pointer">
+<article class="group relative flex flex-col gap-4 md:gap-6 cursor-pointer">
 <div class="relative w-full aspect-[3/4] overflow-hidden bg-surface-container-highest">
 <img class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfw-PpZlAMixYGGNYbDZXFuDwPs-c0E_w92LIB4-I1W5cgcWc06IFu_AgZ3rXskXeLWiDXMxQHkd8OYUf5AyiFg_8kEJ_6klVzIU2P1lB3oHywGXbsiT2s1wSTLTHWYEOV8CMxHuQD4r736Gz1tfYGhfoR0z-qb--MsiK4XwU7AhwwyyDvathkroOiKyDZYb3g4SKTPowTUabO6k61r_7powjJEcQL28GEs4jFAFGXtXB2ecupAE7iTGe9rm5kn5PH6wcAjAqKNJw" alt="Nomad Carryall"/>
 <button class="absolute top-4 right-4 z-10 text-muted-gray hover:text-onyx-black transition-colors">
@@ -146,12 +154,12 @@
 </div>
 </div>
 <div class="flex flex-col gap-1">
-<h3 class="font-body-lg text-body-lg font-bold text-onyx-black tracking-wide uppercase">Nomad Carryall</h3>
-<span class="font-body-md text-body-md text-muted-gray">Dune Canvas</span>
-<span class="font-body-lg text-body-lg text-onyx-black mt-2">$310</span>
+<h3 class="font-body-lg text-[15px] md:text-body-lg font-bold text-onyx-black tracking-wide uppercase">Nomad Carryall</h3>
+<span class="font-body-md text-xs md:text-body-md text-muted-gray">Dune Canvas</span>
+<span class="font-body-lg text-[15px] md:text-body-lg text-onyx-black mt-1 md:mt-2">$310</span>
 </div>
 </article>
-<article class="group relative flex flex-col gap-6 cursor-pointer">
+<article class="group relative flex flex-col gap-4 md:gap-6 cursor-pointer">
 <div class="relative w-full aspect-[3/4] overflow-hidden bg-surface-container-highest">
 <img class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRF9lHVtsgMeBgHnKeZNvgOJCAdqt-68AFggXVfyf3sTDefDpRbK4ZxRfjZlBW_rXFgQE8rFwZ-DH1_2GYObOWAMvL5OIRUQ-sPcwHEyHfSxQMS6QBJi5iHDwb2qjb2BLpH411sEzK_pSYDZM0bq9uxLnqvpjhaZRCWEejseXtRQpzaRi8O6dtBXGIQmTz_6cKKmfVNHzabOUGIQE58_aYMDRXou6xfnhol5s9uK-Hf35NZuDcIj0FVoMGovc5JaMTDhMDHWmv5hw" alt="Studio Overshirt"/>
 <button class="absolute top-4 right-4 z-10 text-muted-gray hover:text-onyx-black transition-colors">
@@ -162,12 +170,12 @@
 </div>
 </div>
 <div class="flex flex-col gap-1">
-<h3 class="font-body-lg text-body-lg font-bold text-onyx-black tracking-wide uppercase">Studio Overshirt</h3>
-<span class="font-body-md text-body-md text-muted-gray">Optic White</span>
-<span class="font-body-lg text-body-lg text-onyx-black mt-2">$285</span>
+<h3 class="font-body-lg text-[15px] md:text-body-lg font-bold text-onyx-black tracking-wide uppercase">Studio Overshirt</h3>
+<span class="font-body-md text-xs md:text-body-md text-muted-gray">Optic White</span>
+<span class="font-body-lg text-[15px] md:text-body-lg text-onyx-black mt-1 md:mt-2">$285</span>
 </div>
 </article>
-<article class="group relative flex flex-col gap-6 cursor-pointer">
+<article class="group relative flex flex-col gap-4 md:gap-6 cursor-pointer">
 <div class="relative w-full aspect-[3/4] overflow-hidden bg-surface-container-highest">
 <img class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-WvZRbLKLQyjVXCYO8wGPrEPeSPbGNIZkJos-AzILU7uf4V-CR0enNZwIwmiNu3uqdFZcjDqIOBFLiJhNTmCGMFouhWB5B8o_QiMvD3srJdjE_eYH_genEoVqrE9Gfor3BMXKt_5_KMtyfGk61Mh2ogh-e03NnQswxgXzMc1bSYJSmOVRD_OShY55DRjTeMamzXV0jfHTBuE67EpfBpJ2fHZrXenGlPgu545FvYv2h5tKnV8NJNqxRvZPkxw5G4bgF4QPDk26Oqs" alt="Architect Trousers"/>
 <button class="absolute top-4 right-4 z-10 text-muted-gray hover:text-onyx-black transition-colors">
@@ -178,9 +186,9 @@
 </div>
 </div>
 <div class="flex flex-col gap-1">
-<h3 class="font-body-lg text-body-lg font-bold text-onyx-black tracking-wide uppercase">Architect Trousers</h3>
-<span class="font-body-md text-body-md text-muted-gray">Charcoal Wool</span>
-<span class="font-body-lg text-body-lg text-onyx-black mt-2">$350</span>
+<h3 class="font-body-lg text-[15px] md:text-body-lg font-bold text-onyx-black tracking-wide uppercase">Architect Trousers</h3>
+<span class="font-body-md text-xs md:text-body-md text-muted-gray">Charcoal Wool</span>
+<span class="font-body-lg text-[15px] md:text-body-lg text-onyx-black mt-1 md:mt-2">$350</span>
 </div>
 </article>
 </section>
@@ -194,28 +202,70 @@
 <a class="inline-flex font-cta text-cta uppercase tracking-widest text-onyx-black border-b border-onyx-black pb-2 w-max hover:text-muted-gray hover:border-muted-gray transition-colors" href="about.html">Read the Narrative</a>
 </div>
 </section>
-</main>
-<footer class="bg-surface-container-lowest w-full pt-section-gap pb-20 border-t border-muted-gray">
-<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop max-w-full">
-<div class="col-span-1 md:col-span-1 mb-12 md:mb-0">
-<span class="font-display-lg text-headline-xl text-onyx-black block mb-6">Rare Folk</span>
-<p class="font-body-md text-body-md text-onyx-black max-w-xs">© 2024 Rare Folk. All Rights Reserved. Crafted for the Discerning.</p>
+<!-- Mobile Menu Drawer Overlay -->
+<div id="mobile-menu" class="fixed inset-0 z-50 bg-onyx-black/40 backdrop-blur-md opacity-0 pointer-events-none transition-opacity duration-500 ease-in-out">
+<div class="absolute right-0 top-0 h-full w-full max-w-[400px] bg-off-white shadow-2xl p-margin-mobile flex flex-col justify-between transform translate-x-full transition-transform duration-500 ease-in-out" id="mobile-menu-content">
+<div>
+<div class="flex justify-between items-center pb-6 border-b border-muted-gray/20">
+<span class="font-display-lg text-headline-lg uppercase tracking-tighter text-onyx-black">Rare Folk</span>
+<button id="close-menu-btn" class="text-onyx-black hover:opacity-70 transition-opacity duration-300 flex items-center justify-center">
+<span class="material-symbols-outlined">close</span>
+</button>
 </div>
-<div class="col-span-1 md:col-span-3 grid grid-cols-2 md:grid-cols-3 gap-8">
-<div class="flex flex-col gap-4">
-<a class="font-body-md text-body-md text-muted-gray hover:text-heritage-gold transition-colors duration-300" href="about.html">Sustainability</a>
-<a class="font-body-md text-body-md text-muted-gray hover:text-heritage-gold transition-colors duration-300" href="legal.html">Shipping &amp; Returns</a>
-</div>
-<div class="flex flex-col gap-4">
-<a class="font-body-md text-body-md text-muted-gray hover:text-heritage-gold transition-colors duration-300" href="legal.html">Legal</a>
-<a class="font-body-md text-body-md text-muted-gray hover:text-heritage-gold transition-colors duration-300" href="legal.html#terms">Terms of Service</a>
-</div>
-<div class="flex flex-col gap-4">
-<a class="font-body-md text-body-md text-muted-gray hover:text-heritage-gold transition-colors duration-300" href="journal.html">Journal</a>
-<a class="font-body-md text-body-md text-muted-gray hover:text-heritage-gold transition-colors duration-300" href="contact.html">Contact</a>
+<div class="flex flex-col space-y-8 mt-12">
+<a class="font-cta text-[24px] uppercase tracking-widest text-muted-gray hover:text-onyx-black transition-colors" href="index.html">Collections</a>
+<a class="font-cta text-[24px] uppercase tracking-widest text-muted-gray hover:text-onyx-black transition-colors" href="journal.html">Narratives</a>
+<a class="font-cta text-[24px] uppercase tracking-widest text-muted-gray hover:text-onyx-black transition-colors" href="about.html">Archives</a>
+<a class="font-cta text-[24px] uppercase tracking-widest text-onyx-black transition-colors" href="shop.html">Boutique</a>
 </div>
 </div>
+<div class="flex flex-col gap-6 border-t border-muted-gray/20 pt-8">
+<a class="font-body-md text-body-md text-muted-gray hover:text-onyx-black flex items-center gap-2" href="contact.html">
+<span class="material-symbols-outlined text-[20px]">mail</span> Contact Us
+</a>
+<div class="flex gap-4">
+<a class="text-onyx-black hover:opacity-70 text-sm font-cta uppercase tracking-wider" href="#">Instagram</a>
+<a class="text-onyx-black hover:opacity-70 text-sm font-cta uppercase tracking-wider" href="#">Pinterest</a>
 </div>
-</footer>
+</div>
+</div>
+</div>
+
+<script>
+    // Mobile Drawer toggle functionality
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const closeMenuBtn = document.getElementById('close-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileMenuContent = document.getElementById('mobile-menu-content');
+
+    if (mobileMenuBtn && closeMenuBtn && mobileMenu && mobileMenuContent) {
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.remove('opacity-0', 'pointer-events-none');
+            mobileMenuContent.classList.remove('translate-x-full');
+        });
+        
+        closeMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.add('opacity-0', 'pointer-events-none');
+            mobileMenuContent.classList.add('translate-x-full');
+        });
+        
+        mobileMenu.addEventListener('click', (e) => {
+            if (e.target === mobileMenu) {
+                mobileMenu.classList.add('opacity-0', 'pointer-events-none');
+                mobileMenuContent.classList.add('translate-x-full');
+            }
+        });
+    }
+
+    // Scroll Navbar Background change
+    window.addEventListener('scroll', () => {
+        const nav = document.getElementById('global-nav');
+        if (window.scrollY > 50) {
+            nav.classList.add('bg-off-white/95', 'backdrop-blur-sm');
+        } else {
+            nav.classList.remove('bg-off-white/95', 'backdrop-blur-sm');
+        }
+    });
+</script>
 </body>
 </html>

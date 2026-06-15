@@ -33,8 +33,11 @@
 </head>
 <body class="bg-off-white text-onyx-black font-body-md antialiased selection:bg-onyx-black selection:text-off-white">
 <!-- TopNavBar -->
-<nav class="fixed top-0 w-full flex justify-between items-center px-margin-mobile md:px-margin-desktop py-6 z-50 border-b border-muted-gray/20 bg-off-white/90 backdrop-blur-md transition-all duration-500 ease-in-out">
+<nav class="fixed top-0 w-full flex justify-between items-center px-margin-mobile md:px-margin-desktop py-6 z-50 border-b border-muted-gray/20 bg-off-white/90 backdrop-blur-md transition-all duration-500 ease-in-out" id="global-nav">
 <div class="flex items-center gap-8">
+<button id="mobile-menu-btn" class="text-onyx-black hover:opacity-70 transition-opacity duration-300 md:hidden flex items-center justify-center">
+<span class="material-symbols-outlined">menu</span>
+</button>
 <ul class="hidden md:flex gap-8">
 <li><a class="font-cta text-cta uppercase tracking-widest text-muted-gray hover:text-onyx-black transition-colors duration-300 relative group" href="index.html">Collections<span class="absolute -bottom-2 left-0 w-0 h-[2px] bg-onyx-black transition-all duration-300 group-hover:w-full"></span></a></li>
 <li><a class="font-cta text-cta uppercase tracking-widest text-muted-gray hover:text-onyx-black transition-colors duration-300 relative group" href="journal.html">Narratives<span class="absolute -bottom-2 left-0 w-0 h-[2px] bg-onyx-black transition-all duration-300 group-hover:w-full"></span></a></li>
@@ -46,7 +49,7 @@
 <a class="font-display-lg text-headline-lg uppercase tracking-tighter text-onyx-black" href="index.html">Rare Folk</a>
 </div>
 <div class="flex items-center gap-6">
-<button class="text-onyx-black hover:opacity-70 transition-opacity duration-300 group flex items-center justify-center">
+<button class="text-onyx-black hover:opacity-70 transition-opacity duration-300 group flex items-center justify-center hidden md:flex">
 <span class="material-symbols-outlined">person</span>
 </button>
 <button class="text-onyx-black hover:opacity-70 transition-opacity duration-300 group flex items-center justify-center">
@@ -55,15 +58,15 @@
 </div>
 </nav>
 <!-- Hero Section -->
-<header class="relative w-full h-[921px] min-h-[700px] flex items-center justify-center pt-24 overflow-hidden bg-surface-container-highest">
+<header class="relative w-full h-[60vh] md:h-[921px] md:min-h-[700px] flex items-center justify-center pt-24 overflow-hidden bg-surface-container-highest">
 <img alt="Our Story Hero" class="absolute inset-0 w-full h-full object-cover object-center opacity-90 scale-105 transform origin-center transition-transform duration-[10s] ease-out hover:scale-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAO2d0NW69KNb_xpxSjvJ1EH7dIKnexFhbMmn_iUkwhsQQc1WQZn5aqFz5TZ6rA-DWP4DovX693KBTLwQZgyGVoXmRVWmZVTmL5xH99WAymPBBV9yUi7CaEnarHR8HJNsxDWqxVwxua9pvAlHSXQS-s4qCH1T19SnlO5SPLW-KNsCgxsvCQSGOsOdBeUMqw1jHBz48qDcMFjWk2JLn6KWyn8TgHZxSra77qMwoldBKq5pU4dMMICnyDqa2yknERnbs662bMgaz48Ug"/>
-<div class="relative z-10 max-w-4xl px-margin-desktop text-center mix-blend-difference text-off-white mt-12">
-<h1 class="font-display-lg text-display-lg text-off-white mb-8 opacity-0 animate-[fadeInUp_1s_ease-out_forwards]">Rare Folk is a premium streetwear brand created for individuals who believe fashion is more than clothing.</h1>
+<div class="relative z-10 max-w-4xl px-margin-mobile md:px-margin-desktop text-center mix-blend-difference text-off-white mt-12">
+<h1 class="font-display-lg text-[28px] md:text-display-lg text-off-white mb-8 opacity-0 animate-[fadeInUp_1s_ease-out_forwards] leading-tight">Rare Folk is a premium streetwear brand created for individuals who believe fashion is more than clothing.</h1>
 </div>
 <div class="absolute inset-0 bg-gradient-to-t from-onyx-black/40 via-transparent to-transparent pointer-events-none"></div>
 </header>
-<!-- The Story Section -->
-<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-off-white">
+<!<!-- The Story Section -->
+<section class="py-20 md:py-section-gap px-margin-mobile md:px-margin-desktop bg-off-white">
 <div class="max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
 <div class="md:col-span-5 md:col-start-2 order-2 md:order-1">
 <img alt="Fabric texture close-up" class="w-full h-auto aspect-[3/4] object-cover bg-surface-container-highest" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZNiNEdmy3dz0C1ONNb84XI1CgdhjMsW8_rDSHsthTe50vCsgMDAmWdm7nRsJTI05SmXjRYaNlIHsWTQ_YCyhrtU6Nz-eybx6r_oYrbAJeDqLXdLVs91CQqpCJs6E2AxyBnHFeQwp8ztdkoK3KJ2roIAu0Y6m1Xgp5i31Q2LvFyhSmPJzUKY9xhlKuXEIBb1MMv9oiT4GVTwh8fWtnlZ4RtYPFRyJgTKI9aYsCvgr-gPlEv_pMiXwfOglFQxc46oG80jLxRjhrqvE"/>
@@ -82,31 +85,31 @@
 </section>
 <!-- Mission & Vision -->
 <section class="bg-surface-container-lowest w-full">
-<div class="grid grid-cols-1 md:grid-cols-2 min-h-[819px]">
-<div class="relative w-full h-[512px] md:h-auto overflow-hidden">
+<div class="grid grid-cols-1 md:grid-cols-2 min-h-[60vh] md:min-h-[819px]">
+<div class="relative w-full h-[40vh] md:h-auto overflow-hidden">
 <img alt="Editorial model walking" class="absolute inset-0 w-full h-full object-cover object-center bg-surface-variant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSDjjAolrvmhqENhkXG5Uh4je0b4gWcztN-Lvq7k6vIAnXJE03b5qsO5uv_8SrazqIOF6JBuLbV4_t6SE_koqWWfvFF-r_MkoasppyyWtCtGDOFWbftwqixcZGumZ3CFGwZ_M-pHj-XIhjTfjOtTO57b0K8YT0Q4jFtpMZ6f6-Vxl-UV3k5nlUA1pShYIhZVbcqcwGYiBYGMZH0zWWYSbvXTN55ePppj_vuIYL9jiZGNP9FO1S-RgTMn-EHAHfizFW4jeVNHCP8oM"/>
 </div>
-<div class="flex flex-col justify-center px-margin-mobile md:px-margin-desktop py-24 md:py-0 bg-off-white">
+<div class="flex flex-col justify-center px-margin-mobile md:px-margin-desktop py-20 md:py-0 bg-off-white">
 <h2 class="font-label-caps text-label-caps uppercase text-muted-gray mb-8 tracking-widest">Mission</h2>
-<p class="font-headline-xl text-headline-xl text-onyx-black leading-tight max-w-xl">
+<p class="font-headline-xl text-[32px] md:text-headline-xl text-onyx-black leading-tight max-w-xl">
     To elevate everyday garments into objects of permanence and cultural significance.
 </p>
 </div>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-2 min-h-[819px]">
-<div class="flex flex-col justify-center px-margin-mobile md:px-margin-desktop py-24 md:py-0 bg-surface-container-highest order-2 md:order-1">
+<div class="grid grid-cols-1 md:grid-cols-2 min-h-[60vh] md:min-h-[819px]">
+<div class="flex flex-col justify-center px-margin-mobile md:px-margin-desktop py-20 md:py-0 bg-surface-container-highest order-2 md:order-1">
 <h2 class="font-label-caps text-label-caps uppercase text-muted-gray mb-8 tracking-widest">Vision</h2>
-<p class="font-headline-xl text-headline-xl text-onyx-black leading-tight max-w-xl">
+<p class="font-headline-xl text-[32px] md:text-headline-xl text-onyx-black leading-tight max-w-xl">
     A wardrobe that serves as a silent prologue to the wearer's personal narrative.
 </p>
 </div>
-<div class="relative w-full h-[512px] md:h-auto overflow-hidden order-1 md:order-2">
+<div class="relative w-full h-[40vh] md:h-auto overflow-hidden order-1 md:order-2">
 <img alt="Architectural geometry" class="absolute inset-0 w-full h-full object-cover object-center bg-surface-variant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQQ6OfJiPqZmEaZWZZWIJC4XnCsdtoXj1iJYs9fOkDpx4j9_VB_D0FAzmp6RMqSmw-NExvgsgIs62ZRmW5cXvObJWZJxx7ewYFfpbDu6AyQzXZZtqrhMKhWxwb_NMQ847v6zGhT3bMh6u786bb9rJdPTjzXYAxHw0FsoMB1y1FemLogq4gltYH1qDuy9FvH3byEKWXR_Zhq4_M0ySlMwRmwinBBLpIH15rHbg4t4dMvmDb2aw0eRtVnYej1ITelT_i5fa9WuLOsRw"/>
 </div>
 </div>
 </section>
 <!-- Brand Values -->
-<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-off-white">
+<section class="py-20 md:py-section-gap px-margin-mobile md:px-margin-desktop bg-off-white">
 <div class="max-w-[1440px] mx-auto">
 <h2 class="font-label-caps text-label-caps uppercase text-muted-gray mb-16 text-center tracking-widest">Core Values</h2>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter border-t border-muted-gray pt-16">
@@ -126,7 +129,7 @@
 </div>
 </section>
 <!-- Founder Story -->
-<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface-container-lowest">
+<section class="py-20 md:py-section-gap px-margin-mobile md:px-margin-desktop bg-surface-container-lowest">
 <div class="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
 <div class="md:col-span-5 mb-12 md:mb-0">
 <img alt="Creative Director portrait" class="w-full aspect-square object-cover grayscale opacity-90 hover:grayscale-0 transition-all duration-[2s] ease-in-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5FCTEmh53tpz84ATM9qJoJydDU8h4q8_qEglVKE0zlprVu72bWBp3vNqywhGvMwrbVyT28YluDZ8jMcTqK-PMOE77Otj5DoDF1G30bMZODE2TtTHiKzIHcgcTFR200cjjbvUOVc4t4Jh6aUhUtw3ySDbNKKyJosPv-swm4wobJhGCRK4mThBZ11Q6emNTGmgkiWhkzyQezV0WnGsX09MViK1f72EthlTSp9qYBi1bIaqzfKQgmVROI8UdDvdJGglsseTl6v9JT8c"/>
@@ -140,12 +143,12 @@
 <p class="font-body-md text-body-md text-muted-gray">Founder &amp; Creative Director</p>
 </div>
 </div>
-</section>
+</section>n>
 <!-- Footer -->
-<footer class="w-full pt-section-gap pb-20 bg-surface-container-lowest border-t border-muted-gray">
+<footer class="w-full pt-20 md:pt-section-gap pb-20 bg-surface-container-lowest border-t border-muted-gray">
 <div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop max-w-full">
 <div class="col-span-1 md:col-span-1 flex flex-col justify-between h-full">
-<div class="font-display-lg text-headline-xl text-onyx-black mb-12 md:mb-0">Rare Folk</div>
+<div class="font-display-lg text-[32px] md:text-headline-xl text-onyx-black mb-12 md:mb-0">Rare Folk</div>
 <div class="font-body-md text-body-md text-muted-gray mt-auto pt-12 md:pt-0">© 2024 Rare Folk. All Rights Reserved. Crafted for the Discerning.</div>
 </div>
 <div class="col-span-1 md:col-start-3 flex flex-col gap-4">
@@ -160,6 +163,72 @@
 </div>
 </div>
 </footer>
+
+<!-- Mobile Menu Drawer Overlay -->
+<div id="mobile-menu" class="fixed inset-0 z-50 bg-onyx-black/40 backdrop-blur-md opacity-0 pointer-events-none transition-opacity duration-500 ease-in-out">
+<div class="absolute right-0 top-0 h-full w-full max-w-[400px] bg-off-white shadow-2xl p-margin-mobile flex flex-col justify-between transform translate-x-full transition-transform duration-500 ease-in-out" id="mobile-menu-content">
+<div>
+<div class="flex justify-between items-center pb-6 border-b border-muted-gray/20">
+<span class="font-display-lg text-headline-lg uppercase tracking-tighter text-onyx-black">Rare Folk</span>
+<button id="close-menu-btn" class="text-onyx-black hover:opacity-70 transition-opacity duration-300 flex items-center justify-center">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<div class="flex flex-col space-y-8 mt-12">
+<a class="font-cta text-[24px] uppercase tracking-widest text-muted-gray hover:text-onyx-black transition-colors" href="index.html">Collections</a>
+<a class="font-cta text-[24px] uppercase tracking-widest text-muted-gray hover:text-onyx-black transition-colors" href="journal.html">Narratives</a>
+<a class="font-cta text-[24px] uppercase tracking-widest text-onyx-black transition-colors" href="about.html">Archives</a>
+<a class="font-cta text-[24px] uppercase tracking-widest text-muted-gray hover:text-onyx-black transition-colors" href="shop.html">Boutique</a>
+</div>
+</div>
+<div class="flex flex-col gap-6 border-t border-muted-gray/20 pt-8">
+<a class="font-body-md text-body-md text-muted-gray hover:text-onyx-black flex items-center gap-2" href="contact.html">
+<span class="material-symbols-outlined text-[20px]">mail</span> Contact Us
+</a>
+<div class="flex gap-4">
+<a class="text-onyx-black hover:opacity-70 text-sm font-cta uppercase tracking-wider" href="#">Instagram</a>
+<a class="text-onyx-black hover:opacity-70 text-sm font-cta uppercase tracking-wider" href="#">Pinterest</a>
+</div>
+</div>
+</div>
+</div>
+
+<script>
+    // Mobile Drawer toggle functionality
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const closeMenuBtn = document.getElementById('close-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileMenuContent = document.getElementById('mobile-menu-content');
+
+    if (mobileMenuBtn && closeMenuBtn && mobileMenu && mobileMenuContent) {
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.remove('opacity-0', 'pointer-events-none');
+            mobileMenuContent.classList.remove('translate-x-full');
+        });
+        
+        closeMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.add('opacity-0', 'pointer-events-none');
+            mobileMenuContent.classList.add('translate-x-full');
+        });
+        
+        mobileMenu.addEventListener('click', (e) => {
+            if (e.target === mobileMenu) {
+                mobileMenu.classList.add('opacity-0', 'pointer-events-none');
+                mobileMenuContent.classList.add('translate-x-full');
+            }
+        });
+    }
+
+    // Scroll Navbar Background change
+    window.addEventListener('scroll', () => {
+        const nav = document.getElementById('global-nav');
+        if (window.scrollY > 50) {
+            nav.classList.add('bg-off-white/95', 'backdrop-blur-sm');
+        } else {
+            nav.classList.remove('bg-off-white/95', 'backdrop-blur-sm');
+        }
+    });
+</script>
 <style>
     @keyframes fadeInUp {
         from { opacity: 0; transform: translateY(20px); }

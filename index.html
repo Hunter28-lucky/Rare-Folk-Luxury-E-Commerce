@@ -127,11 +127,14 @@
 <button class="text-primary hover:opacity-70 transition-opacity duration-300">
 <span class="material-symbols-outlined">search</span>
 </button>
-<button class="text-primary hover:opacity-70 transition-opacity duration-300">
+<button class="text-primary hover:opacity-70 transition-opacity duration-300 hidden md:block">
 <span class="material-symbols-outlined">person</span>
 </button>
 <button class="text-primary hover:opacity-70 transition-opacity duration-300">
 <span class="material-symbols-outlined">shopping_bag</span>
+</button>
+<button id="mobile-menu-btn" class="text-primary hover:opacity-70 transition-opacity duration-300 md:hidden flex items-center justify-center">
+<span class="material-symbols-outlined">menu</span>
 </button>
 </div>
 </nav>
@@ -147,43 +150,43 @@
 </div>
 </header>
 <!-- Philosophy Section -->
-<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-off-white">
+<section class="py-20 md:py-section-gap px-margin-mobile md:px-margin-desktop bg-off-white">
 <div class="max-w-4xl mx-auto text-center fade-up">
-<h2 class="font-headline-xl text-headline-xl text-onyx-black mb-8">Sharing Culture</h2>
+<h2 class="font-headline-xl text-[32px] md:text-headline-xl text-onyx-black mb-8">Sharing Culture</h2>
 <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
     We believe in the power of stories woven into fabric. Every piece is a canvas, carrying the weight of heritage and the spark of modern interpretation. We don't just create garments; we curate cultural narratives for the discerning individual.
 </p>
 </div>
 </section>
 <!-- Featured Collection -->
-<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface" id="collections">
+<section class="py-20 md:py-section-gap px-margin-mobile md:px-margin-desktop bg-surface" id="collections">
 <div class="flex justify-between items-end mb-16 fade-up">
-<h2 class="font-headline-xl text-headline-xl text-onyx-black">Curated Edit</h2>
+<h2 class="font-headline-xl text-[32px] md:text-headline-xl text-onyx-black">Curated Edit</h2>
 <a class="font-cta text-cta uppercase text-onyx-black border-b border-onyx-black pb-1 hover:text-muted-gray transition-colors" href="shop.html">View All</a>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<div class="grid grid-cols-2 gap-x-4 md:gap-x-gutter gap-y-12 md:gap-y-24">
 <!-- Product Card 1 -->
 <a href="product.html" class="group cursor-pointer fade-up block">
-<div class="relative overflow-hidden bg-surface-container-highest aspect-[3/4] mb-6">
+<div class="relative overflow-hidden bg-surface-container-highest aspect-[3/4] mb-4 md:mb-6">
 <img alt="Oversized Graphic Tee" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfsLntTQP4opuVoNi1jvMRkA2RvBg7y3nxeXdzQjrzgsUsAK-RzrIrfJUshBxObBA3A_xj9tGOpeyA92X43U2GGFT2yWXGjp6hIhhJoMUYXJtRd8-k7l-SAP5WB3WuOxVhTJiX8TPDmt7QoLfrcaaqmrrGNkvm7M5hMfuq3p1vBfRvddiRSGQrGivmROyJvg3U9SVTPXYxZjGVgNVOrMqKYJ0clHTvCxC8LTWx7GDwAWLNWopJzeOfvoghsQ6qZUwcc9RcyX3lO8w"/>
 </div>
-<div class="flex justify-between items-start">
+<div class="flex justify-between items-start flex-col sm:flex-row gap-2">
 <div>
-<h3 class="font-headline-lg text-headline-lg text-onyx-black">Ancestral Lines Tee</h3>
-<p class="font-body-md text-muted-gray mt-2">Heavyweight Cotton / Oversized Fit</p>
+<h3 class="font-headline-lg text-body-lg md:text-headline-lg text-onyx-black">Ancestral Lines Tee</h3>
+<p class="font-body-md text-muted-gray mt-1 text-sm md:text-body-md">Heavyweight Cotton / Oversized Fit</p>
 </div>
 <span class="font-cta text-cta text-onyx-black">$120</span>
 </div>
 </a>
 <!-- Product Card 2 -->
 <div class="group cursor-pointer fade-up" style="transition-delay: 100ms;">
-<div class="relative overflow-hidden bg-surface-container-highest aspect-[3/4] mb-6">
+<div class="relative overflow-hidden bg-surface-container-highest aspect-[3/4] mb-4 md:mb-6">
 <img alt="Minimalist Black Tee" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_HXtGJwAGxgCC5Nd63OGk40XZJAJv6fxJKqYybHmvVAmNz2rc0a5RlqyU1ocbaEXvar_krzmCkckap1d4fOKG48drxNj4NPZAcOauOSv7CdQCcatCDJqvSAhjCG0NFBHarZ4DGfSbI5RLa94fZ-tSrG_vW_Q5ftWjSO4zgVtcXB724r6uF_jwEnYhX2pqpkUjNtntI4jinc0AzAGKnbVOkt8Twq3VOJLRsT2euYcsBVTKAW6L7PTUfnE1w_LwruRv9btWOsIwzDA"/>
 </div>
-<div class="flex justify-between items-start">
+<div class="flex justify-between items-start flex-col sm:flex-row gap-2">
 <div>
-<h3 class="font-headline-lg text-headline-lg text-onyx-black">Void Structure Tee</h3>
-<p class="font-body-md text-muted-gray mt-2">Organic Pima / Boxy Cut</p>
+<h3 class="font-headline-lg text-body-lg md:text-headline-lg text-onyx-black">Void Structure Tee</h3>
+<p class="font-body-md text-muted-gray mt-1 text-sm md:text-body-md">Organic Pima / Boxy Cut</p>
 </div>
 <span class="font-cta text-cta text-onyx-black">$110</span>
 </div>
@@ -191,10 +194,10 @@
 </div>
 </section>
 <!-- Narrative Block -->
-<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-onyx-black text-off-white">
+<section class="py-20 md:py-section-gap px-margin-mobile md:px-margin-desktop bg-onyx-black text-off-white">
 <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter items-center">
 <div class="order-2 md:order-1 fade-up">
-<h2 class="font-headline-xl text-headline-xl mb-8">The Symbolism</h2>
+<h2 class="font-headline-xl text-[32px] md:text-headline-xl mb-8">The Symbolism</h2>
 <p class="font-body-lg text-body-lg text-primary-fixed-dim mb-12">
     Our latest collection draws inspiration from ancient geometric motifs, reimagined through a brutalist lens. Each pattern is meticulously researched, honoring its origins while being stripped down to its rawest visual essence.
 </p>
@@ -206,11 +209,11 @@
 </div>
 </section>
 <!-- Newsletter / Footer -->
-<footer class="bg-surface-container-lowest pt-section-gap pb-20 border-t border-muted-gray">
+<footer class="bg-surface-container-lowest pt-20 md:pt-section-gap pb-20 border-t border-muted-gray">
 <div class="px-margin-mobile md:px-margin-desktop max-w-full">
 <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter mb-32 fade-up">
 <div>
-<h2 class="font-display-lg text-headline-xl text-onyx-black mb-4">Join the Inner Circle</h2>
+<h2 class="font-display-lg text-[32px] md:text-headline-xl text-onyx-black mb-4">Join the Inner Circle</h2>
 <p class="font-body-md text-muted-gray mb-8">Exclusive access to limited drops and cultural narratives.</p>
 </div>
 <div class="flex items-end">
@@ -240,7 +243,61 @@
 </div>
 </div>
 </footer>
+<!-- Mobile Menu Drawer Overlay -->
+<div id="mobile-menu" class="fixed inset-0 z-50 bg-onyx-black/40 backdrop-blur-md opacity-0 pointer-events-none transition-opacity duration-500 ease-in-out">
+<div class="absolute right-0 top-0 h-full w-full max-w-[400px] bg-off-white shadow-2xl p-margin-mobile flex flex-col justify-between transform translate-x-full transition-transform duration-500 ease-in-out" id="mobile-menu-content">
+<div>
+<div class="flex justify-between items-center pb-6 border-b border-muted-gray/20">
+<span class="font-display-lg text-headline-lg uppercase tracking-tighter text-onyx-black">Rare Folk</span>
+<button id="close-menu-btn" class="text-onyx-black hover:opacity-70 transition-opacity duration-300 flex items-center justify-center">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<div class="flex flex-col space-y-8 mt-12">
+<a class="font-cta text-[24px] uppercase tracking-widest text-onyx-black transition-colors" href="index.html">Collections</a>
+<a class="font-cta text-[24px] uppercase tracking-widest text-muted-gray hover:text-onyx-black transition-colors" href="journal.html">Narratives</a>
+<a class="font-cta text-[24px] uppercase tracking-widest text-muted-gray hover:text-onyx-black transition-colors" href="about.html">Archives</a>
+<a class="font-cta text-[24px] uppercase tracking-widest text-muted-gray hover:text-onyx-black transition-colors" href="shop.html">Boutique</a>
+</div>
+</div>
+<div class="flex flex-col gap-6 border-t border-muted-gray/20 pt-8">
+<a class="font-body-md text-body-md text-muted-gray hover:text-onyx-black flex items-center gap-2" href="contact.html">
+<span class="material-symbols-outlined text-[20px]">mail</span> Contact Us
+</a>
+<div class="flex gap-4">
+<a class="text-onyx-black hover:opacity-70 text-sm font-cta uppercase tracking-wider" href="#">Instagram</a>
+<a class="text-onyx-black hover:opacity-70 text-sm font-cta uppercase tracking-wider" href="#">Pinterest</a>
+</div>
+</div>
+</div>
+</div>
+
 <script>
+    // Mobile Drawer toggle functionality
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const closeMenuBtn = document.getElementById('close-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileMenuContent = document.getElementById('mobile-menu-content');
+
+    if (mobileMenuBtn && closeMenuBtn && mobileMenu && mobileMenuContent) {
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.remove('opacity-0', 'pointer-events-none');
+            mobileMenuContent.classList.remove('translate-x-full');
+        });
+        
+        closeMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.add('opacity-0', 'pointer-events-none');
+            mobileMenuContent.classList.add('translate-x-full');
+        });
+        
+        mobileMenu.addEventListener('click', (e) => {
+            if (e.target === mobileMenu) {
+                mobileMenu.classList.add('opacity-0', 'pointer-events-none');
+                mobileMenuContent.classList.add('translate-x-full');
+            }
+        });
+    }
+
     // Simple Parallax & Scroll Effects
     window.addEventListener('scroll', () => {
         document.body.style.setProperty('--scroll-y', window.scrollY);
