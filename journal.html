@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Journal - Rare Folk</title>
+<meta name="description" content="Explorations in culture, identity, and the narratives woven into the fabric of modern heritage. The Rare Folk Journal."/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors":{"on-tertiary-fixed":"#1d1b1a","primary-fixed-dim":"#c9c6c5","on-secondary-fixed-variant":"#594320","secondary-container":"#fddaac","surface-container-highest":"#e5e2dd","on-primary-container":"#858383","error":"#ba1a1a","surface-dim":"#dcdad5","on-error-container":"#93000a","surface-container-high":"#ebe8e3","on-surface-variant":"#444748","off-white":"#F5F2ED","surface-container-lowest":"#ffffff","on-secondary":"#ffffff","error-container":"#ffdad6","on-secondary-fixed":"#281800","inverse-on-surface":"#f3f0eb","on-tertiary":"#ffffff","surface-bright":"#fcf9f4","onyx-black":"#0A0A0A","on-primary-fixed-variant":"#474646","background":"#fcf9f4","heritage-gold":"#C8A97E","tertiary-fixed-dim":"#cac6c3","on-primary-fixed":"#1c1b1b","outline":"#747878","on-error":"#ffffff","on-tertiary-container":"#868381","secondary-fixed-dim":"#e2c195","primary":"#000000","on-background":"#1c1c19","on-secondary-container":"#785e39","surface":"#fcf9f4","primary-fixed":"#e5e2e1","secondary-fixed":"#ffddb0","on-surface":"#1c1c19","on-primary":"#ffffff","secondary":"#735a36","outline-variant":"#c4c7c7","muted-gray":"#969696","tertiary-container":"#1d1b1a","primary-container":"#1c1b1b","tertiary":"#000000","inverse-primary":"#c9c6c5","inverse-surface":"#31302d","tertiary-fixed":"#e6e1df","surface-container":"#f0ede8","surface-tint":"#5f5e5e","on-tertiary-fixed-variant":"#484645","surface-variant":"#e5e2dd","surface-container-low":"#f6f3ee"},
+          "borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},
+          "spacing":{"margin-desktop":"80px","unit":"4px","section-gap":"160px","margin-mobile":"20px","gutter":"24px"},
+          "fontFamily":{"display-lg-mobile":["Playfair Display"],"headline-xl":["Playfair Display"],"display-lg":["Playfair Display"],"headline-lg":["Playfair Display"],"cta":["Montserrat"],"body-lg":["Montserrat"],"label-caps":["Montserrat"],"body-md":["Montserrat"]},
+          "fontSize":{"display-lg-mobile":["44px",{"lineHeight":"1.2","fontWeight":"700"}],"headline-xl":["48px",{"lineHeight":"1.2","fontWeight":"600"}],"display-lg":["72px",{"lineHeight":"1.1","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-lg":["32px",{"lineHeight":"1.3","fontWeight":"600"}],"cta":["14px",{"lineHeight":"1.0","letterSpacing":"0.1em","fontWeight":"600"}],"body-lg":["18px",{"lineHeight":"1.6","letterSpacing":"0.01em","fontWeight":"400"}],"label-caps":["12px",{"lineHeight":"1.0","letterSpacing":"0.15em","fontWeight":"600"}],"body-md":["16px",{"lineHeight":"1.6","fontWeight":"400"}]}
+        }
+      }
+    }
+</script>
+<style>
+    body { background-color: #F5F2ED; }
+    html { scroll-behavior: smooth; }
+    .nav-link-hover { position: relative; display: inline-block; }
+    .nav-link-hover::after { content: ''; position: absolute; width: 100%; transform: scaleX(0); height: 2px; bottom: -4px; left: 0; background-color: #0A0A0A; transform-origin: bottom right; transition: transform 0.3s ease-out; }
+    .nav-link-hover:hover::after { transform: scaleX(1); transform-origin: bottom left; }
+</style>
+</head>
+<body class="text-onyx-black antialiased selection:bg-heritage-gold selection:text-white">
+<nav class="fixed top-0 w-full bg-off-white/95 backdrop-blur-md border-b border-muted-gray/20 z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop py-6 transition-all duration-500 ease-in-out">
+<button class="md:hidden text-onyx-black focus:outline-none">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">menu</span>
+</button>
+<div class="hidden md:flex gap-8 items-center flex-1">
+<a class="font-cta text-cta uppercase tracking-widest text-muted-gray hover:text-onyx-black transition-colors duration-300 nav-link-hover" href="index.html">Collections</a>
+<a class="font-cta text-cta uppercase tracking-widest text-onyx-black border-b-2 border-onyx-black pb-1" href="journal.html">Narratives</a>
+<a class="font-cta text-cta uppercase tracking-widest text-muted-gray hover:text-onyx-black transition-colors duration-300 nav-link-hover" href="about.html">Archives</a>
+<a class="font-cta text-cta uppercase tracking-widest text-muted-gray hover:text-onyx-black transition-colors duration-300 nav-link-hover" href="shop.html">Boutique</a>
+</div>
+<a class="font-display-lg-mobile md:font-display-lg text-headline-xl md:text-headline-lg uppercase tracking-tighter text-onyx-black text-center flex-1 md:flex-none" href="index.html">Rare Folk</a>
+<div class="flex gap-6 items-center flex-1 justify-end">
+<button class="text-onyx-black hover:opacity-70 transition-opacity duration-300 focus:outline-none">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">shopping_bag</span>
+</button>
+<button class="hidden md:block text-onyx-black hover:opacity-70 transition-opacity duration-300 focus:outline-none">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">person</span>
+</button>
+</div>
+</nav>
+<main class="pt-[120px] md:pt-[160px] pb-section-gap">
+<header class="px-margin-mobile md:px-margin-desktop mb-20 md:mb-32 flex flex-col items-center text-center">
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg mb-6">Journal</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Explorations in culture, identity, and the narratives woven into the fabric of modern heritage.</p>
+</header>
+<div class="px-margin-mobile md:px-margin-desktop mb-16 overflow-x-auto no-scrollbar">
+<div class="flex gap-8 border-b border-muted-gray/30 pb-4 min-w-max">
+<button class="font-label-caps text-label-caps text-onyx-black border-b border-onyx-black pb-4 -mb-[17px]">All Narratives</button>
+<button class="font-label-caps text-label-caps text-muted-gray hover:text-onyx-black transition-colors pb-4">Culture</button>
+<button class="font-label-caps text-label-caps text-muted-gray hover:text-onyx-black transition-colors pb-4">Fashion</button>
+<button class="font-label-caps text-label-caps text-muted-gray hover:text-onyx-black transition-colors pb-4">Stories</button>
+<button class="font-label-caps text-label-caps text-muted-gray hover:text-onyx-black transition-colors pb-4">Identity</button>
+</div>
+</div>
+<!-- Featured Article -->
+<section class="px-margin-mobile md:px-margin-desktop grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center mb-section-gap">
+<div class="lg:col-span-5 lg:col-start-1 lg:pr-12 order-2 lg:order-1 mt-8 lg:mt-0">
+<span class="block font-label-caps text-label-caps text-heritage-gold mb-6 uppercase">Culture Feature</span>
+<h2 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg mb-8 leading-tight">What Does Sharing Culture Mean?</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10">In an interconnected world, the line between appreciation and appropriation is increasingly fine. We explore the nuances of global inspiration, examining how design can honor heritage without reducing it to a commodity.</p>
+<a class="inline-block border border-onyx-black text-onyx-black px-8 py-4 font-cta text-cta uppercase hover:bg-onyx-black hover:text-white transition-colors duration-300" href="#">Read the Article</a>
+</div>
+<div class="lg:col-span-7 lg:col-start-6 order-1 lg:order-2 h-[614px] lg:h-[819px] relative group overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7z1rePS45cLsWu7E4kHn2qzQZNWz1NLuHcO-U6T8sKmqkZF5QK1e6tT2w3DXY-EIazJxXZYbVxtIh06whtpAX4W06ccS-izMMVWzReiNF258yBFCNOe2U62l4koWwJWpajjG7f4tlCfRpI3wd3SeoGN3iALF7k5Z6Cspl5s5IhQepXpPh7AtyAGClqvcqIw7a2RohkaTon4vml3o23aZDNPQij7At7-P2pOo3HDABqmpfAn9OwxU4INAtA0J1ISVnW8L1RVlr1fQ" alt="Culture Feature"/>
+</div>
+</section>
+<!-- Asymmetric Editorial Grid -->
+<section class="px-margin-mobile md:px-margin-desktop mb-section-gap">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-gutter gap-y-24">
+<article class="lg:col-span-8 group cursor-pointer">
+<div class="h-[512px] lg:h-[716px] mb-6 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out grayscale hover:grayscale-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQOyGGhFgHaAB9JnfVqZXMI_X_mLOBpe28utO7-tqb650zp9eGptDllXviQe7TNtmjlJp7wWHQolbvjCdWgt0YbyGV84Zb834f3t4zDf3kZZJnlol9pyJ8e_rwkFd4Dlnbr_rHlfudKs7fPY4Ttl0iCxvre7_mV9Eekj8GAOZfptal9tugAaY32d9seRrfYq6IPC7Iqu_Rh8YmqfMtdHNa058MuXFAV5gbSW9Z93LoW8LiOpcHpQcyN7hyzEprEtMSz_G_dJPELCc" alt="The Architecture of Silence"/>
+</div>
+<div class="flex flex-col">
+<div class="flex justify-between items-center mb-4">
+<span class="font-label-caps text-label-caps text-muted-gray uppercase">Fashion</span>
+<span class="font-label-caps text-label-caps text-muted-gray">Oct 12, 2024</span>
+</div>
+<h3 class="font-headline-xl text-headline-xl mb-4 group-hover:text-heritage-gold transition-colors duration-300">The Architecture of Silence</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">Deconstructing the minimalist wardrobe and the psychological impact of wearing structural, unbranded garments in urban spaces.</p>
+</div>
+</article>
+<article class="lg:col-span-4 lg:mt-32 group cursor-pointer">
+<div class="aspect-[3/4] mb-6 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYAjUU6I0z3USlbr8XQh_f5N2Y3IXYoOVEFhSoyx7ezlXdI_PV1NGr53p7EvmhKIGHg66SvUwGIYaoiBn7VamkD3G7C8FbLWCvyHKrRZSU-KaCB_3kSE4LDNn55kVYwmLzuQPuNfobpDvMNZF5DE0Sl3SA-dSkQEKCHLhVbpNHSykwTiOOqMZPI6lgl22XB282GKQdkaYF5xfc7MzkgLTbPJ7v5Rz5vLWt-wZa7o1RxuW2JGg5qinKXcVRjVaI2o8GiqQMUYgt6cQ" alt="Threads of Origin"/>
+</div>
+<div class="flex flex-col">
+<div class="flex justify-between items-center mb-3">
+<span class="font-label-caps text-label-caps text-muted-gray uppercase">Stories</span>
+<span class="font-label-caps text-label-caps text-muted-gray">Oct 05, 2024</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg mb-3 group-hover:text-heritage-gold transition-colors duration-300">Threads of Origin</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Meeting the artisans preserving century-old weaving techniques in the Atlas Mountains.</p>
+</div>
+</article>
+<article class="lg:col-span-5 group cursor-pointer">
+<div class="aspect-square mb-6 overflow-hidden bg-surface-container-highest">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out opacity-90" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZPv7ZRWcPo46ReJOX63AKRZ1Wk6TPMCgCiuU-CeK1yKamrhR1_-nprCuOVKjPDi4nJEiRBObW1L6Q4u0KFHQ3IvF4-qZzyoFLMzWS6p6W503lhHIUjsdY9w9Mxq4y883rjb_bhQ83RADctYV54gfPi17BVW1pDMBJfhSSVmaNjFI0xe-6N4doaOz6D8cLB32ECI_mT1IHyQF-IPJnik5YHFjbnwFMKNBk8wHFdwD-blSANH8AxOlElrX99RaP4MKoDdPM1ymW_7Q" alt="Objects in Isolation"/>
+</div>
+<div class="flex flex-col">
+<div class="flex justify-between items-center mb-3">
+<span class="font-label-caps text-label-caps text-muted-gray uppercase">Identity</span>
+<span class="font-label-caps text-label-caps text-muted-gray">Sep 28, 2024</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg mb-3 group-hover:text-heritage-gold transition-colors duration-300">Objects in Isolation</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">How placing traditional artifacts in stark, modern contexts changes our perception of their intrinsic value.</p>
+</div>
+</article>
+<article class="lg:col-span-6 lg:col-start-7 lg:-mt-24 group cursor-pointer">
+<div class="aspect-[4/3] mb-6 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2iVa43fhHGbmVj2WyQjGDWdqL2gRxpBAaFO7npqMoUS7w60VdfRsz9E7UffWyz1cbzij_JgfVmHb3mp8rK8CEXxIK_8cc4ziyCXrhoevD9z_LvPt0T1ld7GDxT-Wt8cGZ-0i67ab6zZ81JA2zSPn3twbBeIzvnycyqqNSWYVgV6xQPslr8ixHe2cekAcScsk1wqsiPxmP9AB4LtsRE96BFtTeLZfTjYDa7KBQjWN7U_Nwam6MglLjEtg2g0qPrVQNbyErPgaPz6E" alt="The Weight of Material"/>
+</div>
+<div class="flex flex-col">
+<div class="flex justify-between items-center mb-3">
+<span class="font-label-caps text-label-caps text-muted-gray uppercase">Culture</span>
+<span class="font-label-caps text-label-caps text-muted-gray">Sep 15, 2024</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg mb-3 group-hover:text-heritage-gold transition-colors duration-300">The Weight of Material</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Sourcing heavy silks and the environmental responsibility of creating heirloom garments.</p>
+</div>
+</article>
+</div>
+</section>
+<!-- Newsletter -->
+<section class="px-margin-mobile md:px-margin-desktop py-32 bg-surface-container-highest border-y border-muted-gray/20">
+<div class="max-w-3xl mx-auto text-center">
+<span class="block font-label-caps text-label-caps text-onyx-black mb-4 uppercase">The Discerning Eye</span>
+<h2 class="font-display-lg-mobile md:font-headline-xl text-display-lg-mobile md:text-headline-xl mb-8">Receive our intermittent dispatches.</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-12">Essays on design, cultural preservation, and early access to limited edition collections, delivered quietly to your inbox.</p>
+<form class="flex flex-col sm:flex-row gap-0 max-w-lg mx-auto">
+<div class="flex-grow relative">
+<input class="w-full bg-transparent border-0 border-b border-onyx-black py-4 px-0 font-body-md text-onyx-black focus:ring-0 focus:border-heritage-gold placeholder-muted-gray transition-colors rounded-none" placeholder="Email Address" required="" type="email"/>
+</div>
+<button class="mt-6 sm:mt-0 sm:ml-8 font-cta text-cta uppercase tracking-widest text-onyx-black hover:text-heritage-gold transition-colors flex items-center gap-2" type="submit">
+    Subscribe
+    <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'wght' 300;">arrow_forward</span>
+</button>
+</form>
+</div>
+</section>
+</main>
+<footer class="w-full pt-section-gap pb-20 bg-surface-container-lowest border-t border-muted-gray">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop max-w-full">
+<div class="col-span-1 md:col-span-1 mb-12 md:mb-0">
+<a class="font-display-lg-mobile md:font-display-lg text-headline-xl text-onyx-black block mb-6" href="index.html">Rare Folk</a>
+<p class="font-body-md text-body-md text-muted-gray max-w-xs">Crafted for the Discerning. A modern atelier dedicated to heritage and quiet confidence.</p>
+</div>
+<div class="col-span-1">
+<ul class="flex flex-col gap-4">
+<li><a class="font-body-md text-body-md text-muted-gray hover:text-heritage-gold transition-colors duration-300" href="about.html">Sustainability</a></li>
+<li><a class="font-body-md text-body-md text-muted-gray hover:text-heritage-gold transition-colors duration-300" href="legal.html">Shipping &amp; Returns</a></li>
+<li><a class="font-body-md text-body-md text-muted-gray hover:text-heritage-gold transition-colors duration-300" href="contact.html">Contact</a></li>
+</ul>
+</div>
+<div class="col-span-1">
+<ul class="flex flex-col gap-4">
+<li><a class="font-body-md text-body-md text-onyx-black font-bold" href="journal.html">Journal</a></li>
+<li><a class="font-body-md text-body-md text-muted-gray hover:text-heritage-gold transition-colors duration-300" href="legal.html">Legal</a></li>
+<li><a class="font-body-md text-body-md text-muted-gray hover:text-heritage-gold transition-colors duration-300" href="legal.html#terms">Terms of Service</a></li>
+</ul>
+</div>
+<div class="col-span-1 flex flex-col justify-between">
+<div class="flex gap-4 mb-12 md:mb-0">
+<a class="text-onyx-black hover:text-heritage-gold transition-colors duration-300" href="#">Instagram</a>
+<a class="text-onyx-black hover:text-heritage-gold transition-colors duration-300" href="#">Pinterest</a>
+</div>
+<div class="font-body-md text-body-md text-muted-gray">© 2024 Rare Folk. All Rights Reserved.</div>
+</div>
+</div>
+</footer>
+</body>
+</html>

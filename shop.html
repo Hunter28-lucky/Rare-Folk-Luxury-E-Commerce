@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Rare Folk - Boutique</title>
+<meta name="description" content="Curated artifacts and limited editions from Rare Folk. A synthesis of heritage craftsmanship and modern anonymity."/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<style>
+    .material-symbols-outlined {
+        font-family: 'Material Symbols Outlined';
+        font-weight: normal;
+        font-style: normal;
+        font-size: 24px;
+        line-height: 1;
+        letter-spacing: normal;
+        text-transform: none;
+        display: inline-block;
+        white-space: nowrap;
+        word-wrap: normal;
+        direction: ltr;
+        -webkit-font-feature-settings: 'liga';
+        -webkit-font-smoothing: antialiased;
+    }
+</style>
+<script id="tailwind-config">
+    tailwind.config = {
+        darkMode: "class",
+        theme: {
+            extend: {
+                "colors": {
+                    "on-tertiary-fixed": "#1d1b1a","primary-fixed-dim": "#c9c6c5","on-secondary-fixed-variant": "#594320","secondary-container": "#fddaac","surface-container-highest": "#e5e2dd","on-primary-container": "#858383","error": "#ba1a1a","surface-dim": "#dcdad5","on-error-container": "#93000a","surface-container-high": "#ebe8e3","on-surface-variant": "#444748","off-white": "#F5F2ED","surface-container-lowest": "#ffffff","on-secondary": "#ffffff","error-container": "#ffdad6","on-secondary-fixed": "#281800","inverse-on-surface": "#f3f0eb","on-tertiary": "#ffffff","surface-bright": "#fcf9f4","onyx-black": "#0A0A0A","on-primary-fixed-variant": "#474646","background": "#fcf9f4","heritage-gold": "#C8A97E","tertiary-fixed-dim": "#cac6c3","on-primary-fixed": "#1c1b1b","outline": "#747878","on-error": "#ffffff","on-tertiary-container": "#868381","secondary-fixed-dim": "#e2c195","primary": "#000000","on-background": "#1c1c19","on-secondary-container": "#785e39","surface": "#fcf9f4","primary-fixed": "#e5e2e1","secondary-fixed": "#ffddb0","on-surface": "#1c1c19","on-primary": "#ffffff","secondary": "#735a36","outline-variant": "#c4c7c7","muted-gray": "#969696","tertiary-container": "#1d1b1a","primary-container": "#1c1b1b","tertiary": "#000000","inverse-primary": "#c9c6c5","inverse-surface": "#31302d","tertiary-fixed": "#e6e1df","surface-container": "#f0ede8","surface-tint": "#5f5e5e","on-tertiary-fixed-variant": "#484645","surface-variant": "#e5e2dd","surface-container-low": "#f6f3ee"
+                },
+                "borderRadius": {"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},
+                "spacing": {"margin-desktop":"80px","unit":"4px","section-gap":"160px","margin-mobile":"20px","gutter":"24px"},
+                "fontFamily": {"display-lg-mobile":["Playfair Display"],"headline-xl":["Playfair Display"],"display-lg":["Playfair Display"],"headline-lg":["Playfair Display"],"cta":["Montserrat"],"body-lg":["Montserrat"],"label-caps":["Montserrat"],"body-md":["Montserrat"]},
+                "fontSize": {
+                    "display-lg-mobile": ["44px", { "lineHeight": "1.2", "fontWeight": "700" }],
+                    "headline-xl": ["48px", { "lineHeight": "1.2", "fontWeight": "600" }],
+                    "display-lg": ["72px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                    "headline-lg": ["32px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                    "cta": ["14px", { "lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "600" }],
+                    "body-lg": ["18px", { "lineHeight": "1.6", "letterSpacing": "0.01em", "fontWeight": "400" }],
+                    "label-caps": ["12px", { "lineHeight": "1.0", "letterSpacing": "0.15em", "fontWeight": "600" }],
+                    "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }]
+                }
+            }
+        }
+    }
+</script>
+</head>
+<body class="bg-off-white text-onyx-black antialiased selection:bg-onyx-black selection:text-off-white">
+<nav class="bg-transparent dark:bg-transparent fixed top-0 w-full z-50 border-b border-muted-gray/20 transition-all duration-500 ease-in-out">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-6 w-full z-50">
+<a class="font-display-lg text-headline-lg uppercase tracking-tighter text-onyx-black dark:text-off-white" href="index.html">
+    Rare Folk
+</a>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-cta text-cta uppercase tracking-widest text-muted-gray hover:text-onyx-black transition-colors duration-300" href="index.html">Collections</a>
+<a class="font-cta text-cta uppercase tracking-widest text-muted-gray hover:text-onyx-black transition-colors duration-300" href="journal.html">Narratives</a>
+<a class="font-cta text-cta uppercase tracking-widest text-muted-gray hover:text-onyx-black transition-colors duration-300" href="about.html">Archives</a>
+<a class="font-cta text-cta uppercase tracking-widest text-onyx-black border-b-2 border-onyx-black pb-1" href="shop.html">Boutique</a>
+</div>
+<div class="flex items-center gap-6">
+<button aria-label="shopping_bag" class="text-primary hover:opacity-70 transition-opacity duration-300">
+<span class="material-symbols-outlined">shopping_bag</span>
+</button>
+<button aria-label="person" class="text-primary hover:opacity-70 transition-opacity duration-300">
+<span class="material-symbols-outlined">person</span>
+</button>
+</div>
+</div>
+</nav>
+<main class="pt-32 pb-section-gap">
+<header class="px-margin-mobile md:px-margin-desktop pt-12 pb-20 flex flex-col items-center text-center">
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-onyx-black mb-6">The Boutique</h1>
+<p class="font-body-lg text-body-lg text-muted-gray max-w-2xl mx-auto">Curated artifacts and limited editions. A synthesis of heritage craftsmanship and modern anonymity.</p>
+</header>
+<section class="px-margin-mobile md:px-margin-desktop mb-16 flex flex-col md:flex-row justify-between items-start md:items-center gap-8 border-b border-muted-gray/20 pb-6 sticky top-24 z-40 bg-off-white/90 backdrop-blur-md">
+<div class="flex flex-wrap items-center gap-6">
+<button class="font-label-caps text-label-caps uppercase text-onyx-black border-b border-onyx-black pb-1">All Objects</button>
+<button class="font-label-caps text-label-caps uppercase text-muted-gray hover:text-onyx-black transition-colors">Oversized Tees</button>
+<button class="font-label-caps text-label-caps uppercase text-muted-gray hover:text-onyx-black transition-colors">Graphic Tees</button>
+<button class="font-label-caps text-label-caps uppercase text-muted-gray hover:text-onyx-black transition-colors">New Arrivals</button>
+<button class="font-label-caps text-label-caps uppercase text-muted-gray hover:text-onyx-black transition-colors">Limited Editions</button>
+</div>
+<div class="flex items-center gap-8 w-full md:w-auto justify-between md:justify-end">
+<div class="relative group">
+<button class="font-label-caps text-label-caps uppercase flex items-center gap-2 text-onyx-black">
+    Sort By
+    <span class="material-symbols-outlined text-[16px]">keyboard_arrow_down</span>
+</button>
+</div>
+<button class="text-onyx-black hover:opacity-70 transition-opacity">
+<span class="material-symbols-outlined">search</span>
+</button>
+</div>
+</section>
+<section class="px-margin-mobile md:px-margin-desktop grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-gutter gap-y-24">
+<article class="group relative flex flex-col gap-6 cursor-pointer">
+<a href="product.html" class="block">
+<div class="relative w-full aspect-[3/4] overflow-hidden bg-surface-container-highest">
+<img class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhnPhVOs5wUtUEt2yX0PCP6eGe6lvdF-kHDBySBgHwhOotFA1Sa3LxvzulvLOWXMsCA-K6bYpumOrOf7KQVlrt9Nyv4UdaVMGS4DhOYkKygkPsEdokQZO6e7npH2gMXr5zXeiaV3j1_8iYjwm70jucQLBvlF78zhvXWUgYAAGMpzVJGnf6D9Vw3qQVN_i_SzM5vvUPc3K-LvOFaIpDzmT2oJzEZcU1OmFSDlXRvtnuw6JLVGzWNB_6wGdIUpwk_V6sE_EaeIHklRY" alt="The Artifact Tee"/>
+<button class="absolute top-4 right-4 z-10 text-muted-gray hover:text-onyx-black transition-colors">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+<div class="absolute bottom-0 left-0 w-full p-0 translate-y-full opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-400 ease-out">
+<button class="w-full bg-onyx-black text-white font-cta text-cta uppercase py-4 tracking-widest hover:bg-surface-tint transition-colors">Quick Add</button>
+</div>
+</div>
+</a>
+<div class="flex flex-col gap-1">
+<h3 class="font-body-lg text-body-lg font-bold text-onyx-black tracking-wide uppercase">The Artifact Tee</h3>
+<span class="font-body-md text-body-md text-muted-gray">Cream / Onyx</span>
+<span class="font-body-lg text-body-lg text-onyx-black mt-2">$145</span>
+</div>
+</article>
+<article class="group relative flex flex-col gap-6 cursor-pointer">
+<div class="relative w-full aspect-[3/4] overflow-hidden bg-surface-container-highest">
+<img class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIBYNqR8ZguvNuQ0t9D8QHDbAercMniVDaAqPzlQcQ93vQ1YX0mTf5X6XSY-uDCfsUyp__XMbUhNBuHf1Gj-uBimkxbwRCVHpB4mCPLvqhrqLgiedsvaswqrcWmYT8-YCEeW8lBw8U5uX2IxQTSeC7sf2fOD_YPBpYurovEH0wGK31SfV911lRfem3AqttQT4sSmVNTa_F6Zay1JgOPU7LfDDL79HgfvBMAbUZjr2r8hh-ZviSwwxrbn6mTsRGbLAI89aEThtbhhY" alt="Monolith Hoodie"/>
+<button class="absolute top-4 right-4 z-10 text-muted-gray hover:text-onyx-black transition-colors">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+<div class="absolute bottom-0 left-0 w-full p-0 translate-y-full opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-400 ease-out">
+<button class="w-full bg-onyx-black text-white font-cta text-cta uppercase py-4 tracking-widest hover:bg-surface-tint transition-colors">Quick Add</button>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="font-body-lg text-body-lg font-bold text-onyx-black tracking-wide uppercase">Monolith Hoodie</h3>
+<span class="font-body-md text-body-md text-muted-gray">Void Black</span>
+<span class="font-body-lg text-body-lg text-onyx-black mt-2">$220</span>
+</div>
+</article>
+<article class="group relative flex flex-col gap-6 cursor-pointer">
+<div class="relative w-full aspect-[3/4] overflow-hidden bg-surface-container-highest">
+<img class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfw-PpZlAMixYGGNYbDZXFuDwPs-c0E_w92LIB4-I1W5cgcWc06IFu_AgZ3rXskXeLWiDXMxQHkd8OYUf5AyiFg_8kEJ_6klVzIU2P1lB3oHywGXbsiT2s1wSTLTHWYEOV8CMxHuQD4r736Gz1tfYGhfoR0z-qb--MsiK4XwU7AhwwyyDvathkroOiKyDZYb3g4SKTPowTUabO6k61r_7powjJEcQL28GEs4jFAFGXtXB2ecupAE7iTGe9rm5kn5PH6wcAjAqKNJw" alt="Nomad Carryall"/>
+<button class="absolute top-4 right-4 z-10 text-muted-gray hover:text-onyx-black transition-colors">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+<div class="absolute bottom-0 left-0 w-full p-0 translate-y-full opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-400 ease-out">
+<button class="w-full bg-onyx-black text-white font-cta text-cta uppercase py-4 tracking-widest hover:bg-surface-tint transition-colors">Quick Add</button>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="font-body-lg text-body-lg font-bold text-onyx-black tracking-wide uppercase">Nomad Carryall</h3>
+<span class="font-body-md text-body-md text-muted-gray">Dune Canvas</span>
+<span class="font-body-lg text-body-lg text-onyx-black mt-2">$310</span>
+</div>
+</article>
+<article class="group relative flex flex-col gap-6 cursor-pointer">
+<div class="relative w-full aspect-[3/4] overflow-hidden bg-surface-container-highest">
+<img class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRF9lHVtsgMeBgHnKeZNvgOJCAdqt-68AFggXVfyf3sTDefDpRbK4ZxRfjZlBW_rXFgQE8rFwZ-DH1_2GYObOWAMvL5OIRUQ-sPcwHEyHfSxQMS6QBJi5iHDwb2qjb2BLpH411sEzK_pSYDZM0bq9uxLnqvpjhaZRCWEejseXtRQpzaRi8O6dtBXGIQmTz_6cKKmfVNHzabOUGIQE58_aYMDRXou6xfnhol5s9uK-Hf35NZuDcIj0FVoMGovc5JaMTDhMDHWmv5hw" alt="Studio Overshirt"/>
+<button class="absolute top-4 right-4 z-10 text-muted-gray hover:text-onyx-black transition-colors">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+<div class="absolute bottom-0 left-0 w-full p-0 translate-y-full opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-400 ease-out">
+<button class="w-full bg-onyx-black text-white font-cta text-cta uppercase py-4 tracking-widest hover:bg-surface-tint transition-colors">Quick Add</button>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="font-body-lg text-body-lg font-bold text-onyx-black tracking-wide uppercase">Studio Overshirt</h3>
+<span class="font-body-md text-body-md text-muted-gray">Optic White</span>
+<span class="font-body-lg text-body-lg text-onyx-black mt-2">$285</span>
+</div>
+</article>
+<article class="group relative flex flex-col gap-6 cursor-pointer">
+<div class="relative w-full aspect-[3/4] overflow-hidden bg-surface-container-highest">
+<img class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-WvZRbLKLQyjVXCYO8wGPrEPeSPbGNIZkJos-AzILU7uf4V-CR0enNZwIwmiNu3uqdFZcjDqIOBFLiJhNTmCGMFouhWB5B8o_QiMvD3srJdjE_eYH_genEoVqrE9Gfor3BMXKt_5_KMtyfGk61Mh2ogh-e03NnQswxgXzMc1bSYJSmOVRD_OShY55DRjTeMamzXV0jfHTBuE67EpfBpJ2fHZrXenGlPgu545FvYv2h5tKnV8NJNqxRvZPkxw5G4bgF4QPDk26Oqs" alt="Architect Trousers"/>
+<button class="absolute top-4 right-4 z-10 text-muted-gray hover:text-onyx-black transition-colors">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+<div class="absolute bottom-0 left-0 w-full p-0 translate-y-full opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-400 ease-out">
+<button class="w-full bg-onyx-black text-white font-cta text-cta uppercase py-4 tracking-widest hover:bg-surface-tint transition-colors">Quick Add</button>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="font-body-lg text-body-lg font-bold text-onyx-black tracking-wide uppercase">Architect Trousers</h3>
+<span class="font-body-md text-body-md text-muted-gray">Charcoal Wool</span>
+<span class="font-body-lg text-body-lg text-onyx-black mt-2">$350</span>
+</div>
+</article>
+</section>
+<section class="my-section-gap w-full grid grid-cols-1 lg:grid-cols-2 bg-surface-container-lowest border-y border-muted-gray/20">
+<div class="w-full h-[614px] lg:h-auto relative">
+<img class="absolute inset-0 w-full h-full object-cover grayscale-[20%]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSuIb9O58jSTT_HpkXLgnVTowPc8mNbsWh1uiJ3lNa2hnSGHsGf79j_aMQFFokfyNYZgJ72ioVGVYgPHSf8Gd_YXt7gbx2Mww-gQPFWwT_aOtjSwWfetq06B6PCh5oNF2oaf8xyvesHIfeoktVQ92l78RzxdijWGwQuHBVl_Qno7PQcc2Xk5NpKHvOcZdYzzelmXvlkpco4qmBYDmWZlQ-zVruR1uSHMYYrch8tIBfBnM-WQXarPorIzKG1CoGzzOKvdXnFmk3E64" alt="Artisan at work"/>
+</div>
+<div class="flex flex-col justify-center px-margin-mobile md:px-margin-desktop py-24 bg-surface-container-highest/30">
+<h2 class="font-headline-xl text-headline-xl text-onyx-black mb-8 leading-tight">Beyond the Seam.<br/>A Study in Intent.</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg mb-12">Every piece in our collection is a dialogue between raw material and refined execution. We reject the ephemeral cycles of seasonal trends in favor of enduring artifacts that age alongside the wearer.</p>
+<a class="inline-flex font-cta text-cta uppercase tracking-widest text-onyx-black border-b border-onyx-black pb-2 w-max hover:text-muted-gray hover:border-muted-gray transition-colors" href="about.html">Read the Narrative</a>
+</div>
+</section>
+</main>
+<footer class="bg-surface-container-lowest w-full pt-section-gap pb-20 border-t border-muted-gray">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop max-w-full">
+<div class="col-span-1 md:col-span-1 mb-12 md:mb-0">
+<span class="font-display-lg text-headline-xl text-onyx-black block mb-6">Rare Folk</span>
+<p class="font-body-md text-body-md text-onyx-black max-w-xs">© 2024 Rare Folk. All Rights Reserved. Crafted for the Discerning.</p>
+</div>
+<div class="col-span-1 md:col-span-3 grid grid-cols-2 md:grid-cols-3 gap-8">
+<div class="flex flex-col gap-4">
+<a class="font-body-md text-body-md text-muted-gray hover:text-heritage-gold transition-colors duration-300" href="about.html">Sustainability</a>
+<a class="font-body-md text-body-md text-muted-gray hover:text-heritage-gold transition-colors duration-300" href="legal.html">Shipping &amp; Returns</a>
+</div>
+<div class="flex flex-col gap-4">
+<a class="font-body-md text-body-md text-muted-gray hover:text-heritage-gold transition-colors duration-300" href="legal.html">Legal</a>
+<a class="font-body-md text-body-md text-muted-gray hover:text-heritage-gold transition-colors duration-300" href="legal.html#terms">Terms of Service</a>
+</div>
+<div class="flex flex-col gap-4">
+<a class="font-body-md text-body-md text-muted-gray hover:text-heritage-gold transition-colors duration-300" href="journal.html">Journal</a>
+<a class="font-body-md text-body-md text-muted-gray hover:text-heritage-gold transition-colors duration-300" href="contact.html">Contact</a>
+</div>
+</div>
+</div>
+</footer>
+</body>
+</html>

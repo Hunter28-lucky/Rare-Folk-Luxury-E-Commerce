@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Rare Folk | Wear Culture. Create Identity.</title>
+<meta name="description" content="Rare Folk is a premium streetwear brand. Curated cultural narratives for the discerning individual. Wear Culture. Create Identity."/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+        darkMode: "class",
+        theme: {
+            extend: {
+                colors: {
+                    "on-tertiary-fixed": "#1d1b1a",
+                    "primary-fixed-dim": "#c9c6c5",
+                    "on-secondary-fixed-variant": "#594320",
+                    "secondary-container": "#fddaac",
+                    "surface-container-highest": "#e5e2dd",
+                    "on-primary-container": "#858383",
+                    "error": "#ba1a1a",
+                    "surface-dim": "#dcdad5",
+                    "on-error-container": "#93000a",
+                    "surface-container-high": "#ebe8e3",
+                    "on-surface-variant": "#444748",
+                    "off-white": "#F5F2ED",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "on-secondary-fixed": "#281800",
+                    "inverse-on-surface": "#f3f0eb",
+                    "on-tertiary": "#ffffff",
+                    "surface-bright": "#fcf9f4",
+                    "onyx-black": "#0A0A0A",
+                    "on-primary-fixed-variant": "#474646",
+                    "background": "#fcf9f4",
+                    "heritage-gold": "#C8A97E",
+                    "tertiary-fixed-dim": "#cac6c3",
+                    "on-primary-fixed": "#1c1b1b",
+                    "outline": "#747878",
+                    "on-error": "#ffffff",
+                    "on-tertiary-container": "#868381",
+                    "secondary-fixed-dim": "#e2c195",
+                    "primary": "#000000",
+                    "on-background": "#1c1c19",
+                    "on-secondary-container": "#785e39",
+                    "surface": "#fcf9f4",
+                    "primary-fixed": "#e5e2e1",
+                    "secondary-fixed": "#ffddb0",
+                    "on-surface": "#1c1c19",
+                    "on-primary": "#ffffff",
+                    "secondary": "#735a36",
+                    "outline-variant": "#c4c7c7",
+                    "muted-gray": "#969696",
+                    "tertiary-container": "#1d1b1a",
+                    "primary-container": "#1c1b1b",
+                    "tertiary": "#000000",
+                    "inverse-primary": "#c9c6c5",
+                    "inverse-surface": "#31302d",
+                    "tertiary-fixed": "#e6e1df",
+                    "surface-container": "#f0ede8",
+                    "surface-tint": "#5f5e5e",
+                    "on-tertiary-fixed-variant": "#484645",
+                    "surface-variant": "#e5e2dd",
+                    "surface-container-low": "#f6f3ee"
+                },
+                borderRadius: {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+                },
+                spacing: {
+                    "margin-desktop": "80px",
+                    "unit": "4px",
+                    "section-gap": "160px",
+                    "margin-mobile": "20px",
+                    "gutter": "24px"
+                },
+                fontFamily: {
+                    "display-lg-mobile": ["Playfair Display"],
+                    "headline-xl": ["Playfair Display"],
+                    "display-lg": ["Playfair Display"],
+                    "headline-lg": ["Playfair Display"],
+                    "cta": ["Montserrat"],
+                    "body-lg": ["Montserrat"],
+                    "label-caps": ["Montserrat"],
+                    "body-md": ["Montserrat"]
+                },
+                fontSize: {
+                    "display-lg-mobile": ["44px", { "lineHeight": "1.2", "fontWeight": "700" }],
+                    "headline-xl": ["48px", { "lineHeight": "1.2", "fontWeight": "600" }],
+                    "display-lg": ["72px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                    "headline-lg": ["32px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                    "cta": ["14px", { "lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "600" }],
+                    "body-lg": ["18px", { "lineHeight": "1.6", "letterSpacing": "0.01em", "fontWeight": "400" }],
+                    "label-caps": ["12px", { "lineHeight": "1.0", "letterSpacing": "0.15em", "fontWeight": "600" }],
+                    "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }]
+                }
+            }
+        }
+    }
+</script>
+<style>
+    body { scroll-behavior: smooth; }
+    .parallax { transform: translateY(var(--scroll-offset, 0px)); }
+    .fade-up { opacity: 0; transform: translateY(30px); transition: opacity 0.8s ease-out, transform 0.8s ease-out; }
+    .fade-up.visible { opacity: 1; transform: translateY(0); }
+    .nav-scrolled { background-color: rgba(245, 242, 237, 0.95); backdrop-filter: blur(10px); }
+</style>
+</head>
+<body class="bg-background text-on-background font-body-md overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop py-6 transition-all duration-500 ease-in-out bg-transparent border-b border-muted-gray/20" id="main-nav">
+<div class="flex items-center">
+<a class="font-display-lg text-headline-lg uppercase tracking-tighter text-onyx-black" href="index.html">Rare Folk</a>
+</div>
+<div class="hidden md:flex space-x-12">
+<a class="font-cta text-cta uppercase tracking-widest text-onyx-black border-b-2 border-onyx-black pb-1 transition-colors duration-300" href="index.html">Collections</a>
+<a class="font-cta text-cta uppercase tracking-widest text-muted-gray hover:text-onyx-black transition-colors duration-300" href="journal.html">Narratives</a>
+<a class="font-cta text-cta uppercase tracking-widest text-muted-gray hover:text-onyx-black transition-colors duration-300" href="about.html">Archives</a>
+<a class="font-cta text-cta uppercase tracking-widest text-muted-gray hover:text-onyx-black transition-colors duration-300" href="shop.html">Boutique</a>
+</div>
+<div class="flex items-center space-x-6">
+<button class="text-primary hover:opacity-70 transition-opacity duration-300">
+<span class="material-symbols-outlined">search</span>
+</button>
+<button class="text-primary hover:opacity-70 transition-opacity duration-300">
+<span class="material-symbols-outlined">person</span>
+</button>
+<button class="text-primary hover:opacity-70 transition-opacity duration-300">
+<span class="material-symbols-outlined">shopping_bag</span>
+</button>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative h-screen w-full flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Wear Culture. Create Identity." class="w-full h-full object-cover parallax" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8LqLyIVs-VY9Y07lHfotbe7PlkvDf-1Pu2bYvfPAr2bgcZ57064ZqTlCW-GSXmeiPD2bed1ss06kkGaifXNEUdXCgunKBqeSkKT0MPWlWQ3_nyRJ5PsVcP2gNyzMkAAhsKzxakQvcL1ySiM-I_ofA8yboZKsgOI0JqoRCjY9M7HRFs5ll4NG4gIGxtiiqJfZ0LadzWxiyD_BWPZg27Y8S-ZdDBdMYX5RWffRh_tN87RHtVnlw2vgVJcXbzrn1CDeNnoTUu_3kQ3k" style="--scroll-offset: calc(var(--scroll-y, 0) * 0.4px);"/>
+<div class="absolute inset-0 bg-onyx-black/30"></div>
+</div>
+<div class="relative z-10 text-center px-margin-mobile md:px-margin-desktop fade-up">
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-off-white uppercase mb-8">Wear Culture.<br/>Create Identity.</h1>
+<a class="inline-block bg-off-white text-onyx-black font-cta text-cta uppercase py-4 px-12 hover:bg-onyx-black hover:text-off-white transition-colors duration-300" href="#collections">Explore Collection</a>
+</div>
+</header>
+<!-- Philosophy Section -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-off-white">
+<div class="max-w-4xl mx-auto text-center fade-up">
+<h2 class="font-headline-xl text-headline-xl text-onyx-black mb-8">Sharing Culture</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+    We believe in the power of stories woven into fabric. Every piece is a canvas, carrying the weight of heritage and the spark of modern interpretation. We don't just create garments; we curate cultural narratives for the discerning individual.
+</p>
+</div>
+</section>
+<!-- Featured Collection -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface" id="collections">
+<div class="flex justify-between items-end mb-16 fade-up">
+<h2 class="font-headline-xl text-headline-xl text-onyx-black">Curated Edit</h2>
+<a class="font-cta text-cta uppercase text-onyx-black border-b border-onyx-black pb-1 hover:text-muted-gray transition-colors" href="shop.html">View All</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<!-- Product Card 1 -->
+<a href="product.html" class="group cursor-pointer fade-up block">
+<div class="relative overflow-hidden bg-surface-container-highest aspect-[3/4] mb-6">
+<img alt="Oversized Graphic Tee" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfsLntTQP4opuVoNi1jvMRkA2RvBg7y3nxeXdzQjrzgsUsAK-RzrIrfJUshBxObBA3A_xj9tGOpeyA92X43U2GGFT2yWXGjp6hIhhJoMUYXJtRd8-k7l-SAP5WB3WuOxVhTJiX8TPDmt7QoLfrcaaqmrrGNkvm7M5hMfuq3p1vBfRvddiRSGQrGivmROyJvg3U9SVTPXYxZjGVgNVOrMqKYJ0clHTvCxC8LTWx7GDwAWLNWopJzeOfvoghsQ6qZUwcc9RcyX3lO8w"/>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline-lg text-headline-lg text-onyx-black">Ancestral Lines Tee</h3>
+<p class="font-body-md text-muted-gray mt-2">Heavyweight Cotton / Oversized Fit</p>
+</div>
+<span class="font-cta text-cta text-onyx-black">$120</span>
+</div>
+</a>
+<!-- Product Card 2 -->
+<div class="group cursor-pointer fade-up" style="transition-delay: 100ms;">
+<div class="relative overflow-hidden bg-surface-container-highest aspect-[3/4] mb-6">
+<img alt="Minimalist Black Tee" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_HXtGJwAGxgCC5Nd63OGk40XZJAJv6fxJKqYybHmvVAmNz2rc0a5RlqyU1ocbaEXvar_krzmCkckap1d4fOKG48drxNj4NPZAcOauOSv7CdQCcatCDJqvSAhjCG0NFBHarZ4DGfSbI5RLa94fZ-tSrG_vW_Q5ftWjSO4zgVtcXB724r6uF_jwEnYhX2pqpkUjNtntI4jinc0AzAGKnbVOkt8Twq3VOJLRsT2euYcsBVTKAW6L7PTUfnE1w_LwruRv9btWOsIwzDA"/>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline-lg text-headline-lg text-onyx-black">Void Structure Tee</h3>
+<p class="font-body-md text-muted-gray mt-2">Organic Pima / Boxy Cut</p>
+</div>
+<span class="font-cta text-cta text-onyx-black">$110</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Narrative Block -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-onyx-black text-off-white">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter items-center">
+<div class="order-2 md:order-1 fade-up">
+<h2 class="font-headline-xl text-headline-xl mb-8">The Symbolism</h2>
+<p class="font-body-lg text-body-lg text-primary-fixed-dim mb-12">
+    Our latest collection draws inspiration from ancient geometric motifs, reimagined through a brutalist lens. Each pattern is meticulously researched, honoring its origins while being stripped down to its rawest visual essence.
+</p>
+<a class="inline-block border border-off-white text-off-white font-cta text-cta uppercase py-4 px-12 hover:bg-off-white hover:text-onyx-black transition-colors duration-300" href="journal.html">Read the Journal</a>
+</div>
+<div class="order-1 md:order-2 mb-12 md:mb-0 fade-up">
+<img alt="Fabric Detail" class="w-full h-auto aspect-square object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtOw5cc-1k2RGPJVlZuCZDWtgE29YcHfjleKCAEB6ebUXIPzHgJD7bm3iOkaxV5nAZ4lVmySU_sz5BWtVSy6AuhiNWhUWBZyYidl2sgHJ57y1jUp2ShURPF58l5fXf0GYNsgYRK-6qi8AjSJxejkpb0x0EI82NZhpJFvnx5h3UiUekb1JlXYKhue6Etl-X4rRQc554Y4qgi-y8QIf_japm8hncro8DKuy3zlPztDOhSbzfzqov_7_HgK_mJF0efjc0nC5DtCdVcGE"/>
+</div>
+</div>
+</section>
+<!-- Newsletter / Footer -->
+<footer class="bg-surface-container-lowest pt-section-gap pb-20 border-t border-muted-gray">
+<div class="px-margin-mobile md:px-margin-desktop max-w-full">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter mb-32 fade-up">
+<div>
+<h2 class="font-display-lg text-headline-xl text-onyx-black mb-4">Join the Inner Circle</h2>
+<p class="font-body-md text-muted-gray mb-8">Exclusive access to limited drops and cultural narratives.</p>
+</div>
+<div class="flex items-end">
+<form class="w-full flex relative">
+<input class="w-full bg-transparent border-b border-onyx-black py-4 font-label-caps text-label-caps text-onyx-black placeholder:text-muted-gray focus:outline-none focus:border-heritage-gold transition-colors" placeholder="YOUR EMAIL ADDRESS" type="email"/>
+<button class="absolute right-0 bottom-4 font-cta text-cta uppercase text-onyx-black hover:text-heritage-gold transition-colors" type="submit">Subscribe</button>
+</form>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter fade-up">
+<div class="col-span-1 md:col-span-1 mb-12 md:mb-0">
+<span class="font-display-lg text-headline-xl text-onyx-black block mb-6">Rare Folk</span>
+<p class="font-body-md text-muted-gray">© 2024 Rare Folk. All Rights Reserved. Crafted for the Discerning.</p>
+</div>
+<div class="flex flex-col space-y-4">
+<a class="font-body-md text-body-md text-muted-gray hover:text-heritage-gold transition-colors duration-300" href="about.html">Sustainability</a>
+<a class="font-body-md text-body-md text-muted-gray hover:text-heritage-gold transition-colors duration-300" href="legal.html">Shipping &amp; Returns</a>
+</div>
+<div class="flex flex-col space-y-4">
+<a class="font-body-md text-body-md text-muted-gray hover:text-heritage-gold transition-colors duration-300" href="legal.html">Legal</a>
+<a class="font-body-md text-body-md text-muted-gray hover:text-heritage-gold transition-colors duration-300" href="legal.html#terms">Terms of Service</a>
+</div>
+<div class="flex flex-col space-y-4">
+<a class="font-body-md text-body-md text-muted-gray hover:text-heritage-gold transition-colors duration-300" href="journal.html">Journal</a>
+<a class="font-body-md text-body-md text-muted-gray hover:text-heritage-gold transition-colors duration-300" href="contact.html">Contact</a>
+</div>
+</div>
+</div>
+</footer>
+<script>
+    // Simple Parallax & Scroll Effects
+    window.addEventListener('scroll', () => {
+        document.body.style.setProperty('--scroll-y', window.scrollY);
+        
+        const nav = document.getElementById('main-nav');
+        if (window.scrollY > 50) {
+            nav.classList.add('nav-scrolled');
+            nav.classList.remove('bg-transparent');
+        } else {
+            nav.classList.remove('nav-scrolled');
+            nav.classList.add('bg-transparent');
+        }
+    });
+
+    // Intersection Observer for Fade-Up Animations
+    const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('.fade-up').forEach((el) => {
+        observer.observe(el);
+    });
+    
+    // Trigger initial check
+    setTimeout(() => {
+        document.querySelectorAll('.fade-up').forEach((el) => {
+            const rect = el.getBoundingClientRect();
+            if(rect.top < window.innerHeight) {
+                el.classList.add('visible');
+            }
+        });
+    }, 100);
+</script>
+</body>
+</html>
