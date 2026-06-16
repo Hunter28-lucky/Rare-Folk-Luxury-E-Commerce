@@ -1,0 +1,18 @@
+[package]
+name = "studstudy1111/clothig-mania"
+version = "1.0.0"
+description = "Rare Folk Luxury E-Commerce static storefront"
+
+[dependencies]
+"wasmer/static-web-server" = "1.0.0"
+
+[fs]
+"/public" = "."
+
+[[command]]
+name = "server"
+module = "wasmer/static-web-server:webserver"
+runner = "wasi"
+
+[command.annotations.wasi]
+main-args = ["--root", "/public"]
